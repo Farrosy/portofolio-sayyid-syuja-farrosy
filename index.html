@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio - Sayyid Syuja Farrosy</title>
+    <link href="output.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .overflow-hidden {
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 dark:bg-slate-900 dark:text-slate-200 transition-colors duration-300">
+
+    <header class="bg-white/80 dark:bg-slate-900/80 shadow-sm sticky top-0 z-40 backdrop-blur-sm">
+        <nav class="container mx-auto px-4 sm:px-6 py-3 flex justify-between items-center">
+            <div class="text-xl font-bold text-slate-900 dark:text-slate-100">Sayyid Syuja Farrosy</div>
+            <div class="flex items-center space-x-2 md:space-x-4">
+                <div class="hidden md:flex space-x-6">
+                    <a href="#about" class="text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition">Tentang Saya</a>
+                    <a href="#experience" class="text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition">Pengalaman</a>
+                    <a href="#education" class="text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition">Pendidikan</a>
+                    <a href="#skills" class="text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition">Keterampilan</a>
+                    <a href="#certificates" class="text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition">Sertifikasi</a>
+                </div>
+                
+                <label for="theme-toggle" class="relative inline-flex items-center cursor-pointer">
+                    <input type="checkbox" id="theme-toggle" class="sr-only peer">
+                    <div class="w-11 h-6 bg-gray-300 rounded-full peer dark:bg-gray-700 peer-checked:bg-slate-800 transition-colors duration-300"></div>
+                    <div class="absolute left-0.5 top-0.5 w-5 h-5 bg-white rounded-full transition-transform duration-300 transform peer-checked:translate-x-5 peer-checked:bg-white dark:peer-checked:bg-white dark:bg-gray-300"></div>
+                </label>
+                
+                <a href="assets/CV_ATS_SAYYID_SYUJA_FARROSY.pdf" target="_blank" rel="noopener noreferrer" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition hidden md:block">
+                    Lihat CV
+                </a>
+                <button id="hamburger-button" class="md:hidden p-2 rounded-md text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-700">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-4 sm:px-6 py-12">
+        <section id="hero" class="text-center pt-8 pb-12">
+             <img src="https://ui-avatars.com/api/?name=Sayyid+Syuja&background=3B82F6&color=fff&size=128" alt="Foto Sayyid Syuja Farrosy" class="w-32 h-32 rounded-full mx-auto mb-3 border-4 border-white dark:border-slate-700 shadow-lg" data-aos="zoom-in" data-aos-duration="1000">
+            <h1 class="text-3xl md:text-5xl font-bold text-slate-900 dark:text-slate-100" data-aos="fade-down" data-aos-delay="200">Sayyid Syuja Farrosy</h1>
+            <p class="text-lg md:text-2xl text-blue-600 dark:text-blue-400 font-medium mt-1" data-aos="fade-down" data-aos-delay="400">IT Support & Frontend Developer Enthusiast</p>
+            <p class="max-w-2xl mx-auto text-slate-600 dark:text-slate-400 mt-3 px-2" data-aos="fade-up" data-aos-delay="600">
+                Lulusan Rekayasa Perangkat Lunak dengan pengalaman sebagai IT Support, memiliki minat tinggi dalam pengembangan web. Siap berkontribusi dan beradaptasi dalam lingkungan kerja yang dinamis.
+            </p>
+            <div class="mt-5 flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4" data-aos="fade-up" data-aos-delay="800">
+                <a href="#contact" class="bg-blue-600 text-white w-full sm:w-auto px-6 py-3 rounded-md hover:bg-blue-700 transition font-medium">Hubungi Saya</a>
+                <a href="https://www.linkedin.com/in/sayyid-syuja-farrosy/" target="_blank" class="bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 w-full sm:w-auto px-6 py-3 rounded-md hover:bg-slate-100 dark:hover:bg-slate-700 transition border border-slate-300 dark:border-slate-700 font-medium">LinkedIn</a>
+            </div>
+        </section>
+        
+        <section id="about" class="py-20">
+            <h2 class="text-3xl font-bold text-center mb-12 text-slate-900 dark:text-slate-100" data-aos="fade-up">Tentang Saya</h2>
+            <div class="max-w-3xl mx-auto bg-white dark:bg-slate-800 p-6 md:p-8 rounded-lg shadow-md transition-transform duration-300 hover:-translate-y-1" data-aos="fade-up" data-aos-delay="200">
+                <p class="text-slate-600 dark:text-slate-400 leading-relaxed text-justify">
+                    Saya Sayyid Syuja Farrosy, seorang lulusan SMK Fatahillah Cileungsi jurusan Rekayasa Perangkat Lunak yang memiliki minat kuat pada bidang IT Support dan Frontend Development. Selama pengalaman Praktik Kerja Lapangan (PKL) sebagai IT Support, saya telah mengasah kemampuan komunikasi, ketelitian, dan manajemen waktu yang baik. Saya adalah individu yang siap untuk belajar, berkontribusi secara aktif dalam tim, dan cepat beradaptasi dengan lingkungan serta teknologi baru.
+                </p>
+            </div>
+        </section>
+        <section id="experience" class="py-20 bg-slate-100 dark:bg-slate-950/50 -mx-4 sm:-mx-6 px-4 sm:px-6">
+             <h2 class="text-3xl font-bold text-center mb-12 text-slate-900 dark:text-slate-100" data-aos="fade-up">Pengalaman Kerja</h2>
+             <div class="max-w-3xl mx-auto">
+                 <div class="bg-white dark:bg-slate-800 p-6 rounded-lg shadow-md mb-6 transition-transform duration-300 hover:-translate-y-1" data-aos="fade-up" data-aos-delay="200">
+                     <div class="flex flex-wrap justify-between items-center gap-2">
+                         <h3 class="text-xl font-bold text-slate-900 dark:text-slate-100">PKL IT Support</h3>
+                         <p class="text-sm text-slate-500 dark:text-slate-400">2 Januari 2024 - 28 Maret 2024</p>
+                     </div>
+                     <p class="text-md text-slate-700 dark:text-slate-300 font-medium mt-1">Radjak Hospital Cileungsi</p>
+                     <ul class="list-disc list-inside mt-4 text-slate-600 dark:text-slate-400 space-y-2">
+                         <li>Mengubah formulir kertas menjadi formulir input dan output digital berbasis website.</li>
+                         <li>Membuat pendataan Excel untuk dokumentasi website yang telah dibuat.</li>
+                         <li>Melakukan instalasi ulang Windows pada PC kantor.</li>
+                     </ul>
+                 </div>
+             </div>
+        </section>
+        <section id="education" class="py-20">
+             <h2 class="text-3xl font-bold text-center mb-12 text-slate-900 dark:text-slate-100" data-aos="fade-up">Pendidikan</h2>
+             <div class="max-w-3xl mx-auto space-y-6">
+                 <div class="bg-white dark:bg-slate-800 p-6 rounded-lg shadow-md transition-transform duration-300 hover:-translate-y-1" data-aos="fade-up" data-aos-delay="200">
+                     <div class="flex flex-wrap justify-between items-center gap-2">
+                         <h3 class="text-xl font-bold text-slate-900 dark:text-slate-100">Cakrawala University</h3>
+                         <p class="text-sm text-slate-500 dark:text-slate-400">2025 - Sekarang</p>
+                     </div>
+                     <p class="text-md text-slate-700 dark:text-slate-300 font-medium mt-1">Ilmu Komputer</p>
+                     <p class="mt-3 text-slate-600 dark:text-slate-400 text-justify">Fokus pada: Design Thinking, Program Fundamentals (Python), Human-Computer Interaction dan Discrete Mathematics.</p>
+                 </div>
+                 <div class="bg-white dark:bg-slate-800 p-6 rounded-lg shadow-md transition-transform duration-300 hover:-translate-y-1" data-aos="fade-up" data-aos-delay="400">
+                     <div class="flex flex-wrap justify-between items-center gap-2">
+                         <h3 class="text-xl font-bold text-slate-900 dark:text-slate-100">SMK Fatahillah Cileungsi</h3>
+                         <p class="text-sm text-slate-500 dark:text-slate-400">2023 - 2025</p>
+                     </div>
+                     <p class="text-md text-slate-700 dark:text-slate-300 font-medium mt-1">Rekayasa Perangkat Lunak</p>
+                     <p class="mt-3 text-slate-600 dark:text-slate-400 text-justify">Fokus pada: Website, Basis Data, Aplikasi Mobile, dan IOT.</p>
+                 </div>
+             </div>
+        </section>
+        <section id="skills" class="py-20 bg-slate-100 dark:bg-slate-950/50 -mx-4 sm:-mx-6 px-4 sm:px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 text-slate-900 dark:text-slate-100" data-aos="fade-up">Keterampilan</h2>
+            <div class="max-w-4xl mx-auto flex flex-wrap justify-center gap-3" data-aos="fade-up" data-aos-delay="200">
+                <span class="bg-blue-100 text-blue-800 dark:bg-blue-900/50 dark:text-blue-300 text-sm font-medium px-4 py-2 rounded-full transition-transform hover:scale-110" data-aos="zoom-in-up" data-aos-delay="100">PHP</span>
+                <span class="bg-blue-100 text-blue-800 dark:bg-blue-900/50 dark:text-blue-300 text-sm font-medium px-4 py-2 rounded-full transition-transform hover:scale-110" data-aos="zoom-in-up" data-aos-delay="150">Laravel 8 dan 11</span>
+                <span class="bg-blue-100 text-blue-800 dark:bg-blue-900/50 dark:text-blue-300 text-sm font-medium px-4 py-2 rounded-full transition-transform hover:scale-110" data-aos="zoom-in-up" data-aos-delay="200">Codeigniter 3</span>
+                <span class="bg-blue-100 text-blue-800 dark:bg-blue-900/50 dark:text-blue-300 text-sm font-medium px-4 py-2 rounded-full transition-transform hover:scale-110" data-aos="zoom-in-up" data-aos-delay="250">Bootstrap</span>
+                <span class="bg-blue-100 text-blue-800 dark:bg-blue-900/50 dark:text-blue-300 text-sm font-medium px-4 py-2 rounded-full transition-transform hover:scale-110" data-aos="zoom-in-up" data-aos-delay="300">Github</span>
+                <span class="bg-green-100 text-green-800 dark:bg-green-900/50 dark:text-green-300 text-sm font-medium px-4 py-2 rounded-full transition-transform hover:scale-110" data-aos="zoom-in-up" data-aos-delay="350">Instalasi & troubleshooting OS (Windows)</span>
+                <span class="bg-gray-200 text-gray-800 dark:bg-gray-700 dark:text-gray-300 text-sm font-medium px-4 py-2 rounded-full transition-transform hover:scale-110" data-aos="zoom-in-up" data-aos-delay="400">Microsoft Word</span>
+                <span class="bg-gray-200 text-gray-800 dark:bg-gray-700 dark:text-gray-300 text-sm font-medium px-4 py-2 rounded-full transition-transform hover:scale-110" data-aos="zoom-in-up" data-aos-delay="450">Microsoft Excel</span>
+            </div>
+        </section>
+        
+        <section id="certificates" class="py-20">
+            <h2 class="text-3xl font-bold text-center mb-4 text-slate-900 dark:text-slate-100" data-aos="fade-up">Sertifikasi</h2>
+            <p class="text-center text-slate-500 dark:text-slate-400 mb-8" data-aos="fade-up" data-aos-delay="100">(Klik pada setiap item untuk melihat sertifikat)</p>
+            
+            <div class="max-w-3xl mx-auto space-y-4" data-aos="fade-up" data-aos-delay="200">
+                <a href="assets/sertifikat-uji-kompetensi.pdf" class="glightbox block bg-white dark:bg-slate-800 p-4 rounded-lg shadow-md text-slate-700 dark:text-slate-300 transition-transform duration-300 hover:-translate-y-1 hover:text-blue-600 dark:hover:text-blue-400">Sertifikat Uji Kompetensi - IDN Networkers</a>
+                <a href="assets/sertifikat-pkl.pdf" class="glightbox block bg-white dark:bg-slate-800 p-4 rounded-lg shadow-md text-slate-700 dark:text-slate-300 transition-transform duration-300 hover:-translate-y-1 hover:text-blue-600 dark:hover:text-blue-400">Sertifikat PKL Radjak Hospital Cileungsi</a>
+                <a href="assets/Meniti Karier sebagai Software Developer.pdf" class="glightbox block bg-white dark:bg-slate-800 p-4 rounded-lg shadow-md text-slate-700 dark:text-slate-300 transition-transform duration-300 hover:-translate-y-1 hover:text-blue-600 dark:hover:text-blue-400">Dicoding: Meniti Karier sebagai Software Developer</a>
+                <a href="assets/Memulai Dasar Pemrograman untuk Menjadi Pengembang.pdf" class="glightbox block bg-white dark:bg-slate-800 p-4 rounded-lg shadow-md text-slate-700 dark:text-slate-300 transition-transform duration-300 hover:-translate-y-1 hover:text-blue-600 dark:hover:text-blue-400">Dicoding: Memulai Dasar Pemrograman untuk Menjadi Pengembang</a>
+                <a href="assets/Pengenalan Data pada Pemrograman (Data 101).pdf" class="glightbox block bg-white dark:bg-slate-800 p-4 rounded-lg shadow-md text-slate-700 dark:text-slate-300 transition-transform duration-300 hover:-translate-y-1 hover:text-blue-600 dark:hover:text-blue-400">Dicoding: Pengenalan Data pada Pemrograman (Data 101)</a>
+                <a href="assets/Pengenalan ke Logika Pemrograman (Programming Logic 101).pdf" class="glightbox block bg-white dark:bg-slate-800 p-4 rounded-lg shadow-md text-slate-700 dark:text-slate-300 transition-transform duration-300 hover:-translate-y-1 hover:text-blue-600 dark:hover:text-blue-400">Dicoding: Pengenalan ke Logika Pemrograman (Programming Logic 101)</a>
+                <a href="assets/Belajar Dasar Cloud dan Gen AI di AWS.pdf" class="glightbox block bg-white dark:bg-slate-800 p-4 rounded-lg shadow-md text-slate-700 dark:text-slate-300 transition-transform duration-300 hover:-translate-y-1 hover:text-blue-600 dark:hover:text-blue-400">Dicoding: Belajar Dasar Cloud dan Gen AI di AWS</a>
+                <a href="assets/Belajar Dasar Git dengan GitHub.pdf" class="glightbox block bg-white dark:bg-slate-800 p-4 rounded-lg shadow-md text-slate-700 dark:text-slate-300 transition-transform duration-300 hover:-translate-y-1 hover:text-blue-600 dark:hover:text-blue-400">Dicoding: Belajar Dasar Git dengan GitHub</a>
+                <a href="assets/Introduction to HTML.pdf" class="glightbox block bg-white dark:bg-slate-800 p-4 rounded-lg shadow-md text-slate-700 dark:text-slate-300 transition-transform duration-300 hover:-translate-y-1 hover:text-blue-600 dark:hover:text-blue-400">SoloLearn: Introduction to HTML</a>
+            </div>
+        </section>
+        
+        <section id="contact" class="py-20 bg-slate-800 dark:bg-slate-950 -mx-4 sm:-mx-6 px-4 sm:px-6 text-center">
+            <div data-aos="fade-up">
+                <h2 class="text-3xl font-bold mb-4 text-white">Hubungi Saya</h2>
+                <p class="max-w-xl mx-auto text-slate-300 mb-8">
+                    Saya terbuka untuk diskusi mengenai peluang kerja atau proyek baru. Silakan hubungi saya melalui:
+                </p>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 mb-8">
+                    <div class="flex items-center gap-3 text-blue-400">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                        <a href="mailto:sayyidsyujafarrosy23@gmail.com" class="font-medium hover:underline">sayyidsyujafarrosy23@gmail.com</a>
+                    </div>
+                    <div class="flex items-center gap-3 text-blue-400">
+                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                        <a href="https://wa.me/6285691050420" target="_blank" class="font-medium hover:underline">+62 856 9105 0420</a>
+                    </div>
+                </div>
+                <div class="flex justify-center space-x-6">
+                    <a href="https://github.com/Farrosy" target="_blank" class="text-slate-400 hover:text-white transition-transform hover:scale-110">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.168 6.839 9.492.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.031-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.338 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0022 12c0-5.523-4.477-10-10-10z" clip-rule="evenodd" /></svg>
+                        <span class="sr-only">GitHub</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/sayyid-syuja-farrosy/" target="_blank" class="text-slate-400 hover:text-white transition-transform hover:scale-110">
+                         <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                         <span class="sr-only">LinkedIn</span>
+                    </a>
+                    <a href="https://www.instagram.com/bukanfaros/" target="_blank" class="text-slate-400 hover:text-white transition-transform hover:scale-110">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.024.06 1.378.06 3.808s-.012 2.784-.06 3.808c-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.024.048-1.378.06-3.808.06s-2.784-.012-3.808-.06c-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.048-1.024-.06-1.378-.06-3.808s.012-2.784.06-3.808c.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 016.08 2.525c.636-.247 1.363-.416 2.427-.465C9.53 2.013 9.884 2 12.315 2zM12 7a5 5 0 100 10 5 5 0 000-10zm0 8a3 3 0 110-6 3 3 0 010 6zm5.75-9.25a1.25 1.25 0 100-2.5 1.25 1.25 0 000 2.5z" clip-rule="evenodd" /></svg>
+                        <span class="sr-only">Instagram</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-slate-900 dark:bg-black text-slate-400 text-center py-6">
+        <p>&copy; 2025 Sayyid Syuja Farrosy. Dibuat dengan HTML & Tailwind CSS.</p>
+    </footer>
+
+    <div id="menu-overlay" class="fixed inset-0 bg-black bg-opacity-50 z-40 hidden"></div>
+    <div id="sidebar-menu" class="fixed top-0 left-0 w-64 h-full bg-white dark:bg-slate-800 shadow-xl z-50 transform -translate-x-full transition-transform duration-300 ease-in-out">
+        <div class="p-4">
+            <div class="flex justify-between items-center mb-4">
+                <h2 class="text-xl font-bold text-slate-900 dark:text-slate-100">Menu</h2>
+                <button id="close-menu-button" class="p-2 rounded-md text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-700">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                </button>
+            </div>
+            <a href="#about" class="block py-2 px-2 text-sm text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-700 rounded">Tentang Saya</a>
+            <a href="#experience" class="block py-2 px-2 text-sm text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-700 rounded">Pengalaman</a>
+            <a href="#education" class="block py-2 px-2 text-sm text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-700 rounded">Pendidikan</a>
+            <a href="#skills" class="block py-2 px-2 text-sm text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-700 rounded">Keterampilan</a>
+            <a href="#certificates" class="block py-2 px-2 text-sm text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-700 rounded">Sertifikasi</a>
+            <a href="assets/CV_ATS_SAYYID_SYUJA_FARROSY.pdf" target="_blank" rel="noopener noreferrer" class="block py-2 px-2 text-sm text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-700 rounded">Lihat CV</a>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        if (history.scrollRestoration) {
+            history.scrollRestoration = 'manual';
+        }
+        window.scrollTo(0, 0);
+
+        AOS.init({
+            duration: 800,
+            once: true,
+        });
+
+        const lightbox = GLightbox({
+            selector: '.glightbox',
+            loop: true,
+        });
+        
+        const themeToggle = document.getElementById('theme-toggle');
+        const htmlEl = document.documentElement;
+        function applyTheme(theme) {
+            if (theme === 'dark') {
+                htmlEl.classList.add('dark');
+                if(themeToggle) themeToggle.checked = true;
+                localStorage.setItem('color-theme', 'dark');
+            } else {
+                htmlEl.classList.remove('dark');
+                if(themeToggle) themeToggle.checked = false;
+                localStorage.setItem('color-theme', 'light');
+            }
+        }
+        const savedTheme = localStorage.getItem('color-theme');
+        const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (savedTheme) {
+            applyTheme(savedTheme);
+        } else {
+            applyTheme(systemPrefersDark ? 'dark' : 'light');
+        }
+        themeToggle.addEventListener('change', () => {
+            const theme = themeToggle.checked ? 'dark' : 'light';
+            applyTheme(theme);
+        });
+
+        const hamburgerButton = document.getElementById('hamburger-button');
+        const sidebarMenu = document.getElementById('sidebar-menu');
+        const menuOverlay = document.getElementById('menu-overlay');
+        const closeMenuButton = document.getElementById('close-menu-button');
+        const body = document.body;
+        function openMenu() {
+            sidebarMenu.classList.remove('-translate-x-full');
+            menuOverlay.classList.remove('hidden');
+            body.classList.add('overflow-hidden');
+        }
+        function closeMenu() {
+            sidebarMenu.classList.add('-translate-x-full');
+            menuOverlay.classList.add('hidden');
+            body.classList.remove('overflow-hidden');
+        }
+        hamburgerButton.addEventListener('click', openMenu);
+        menuOverlay.addEventListener('click', closeMenu);
+        closeMenuButton.addEventListener('click', closeMenu);
+        
+        sidebarMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', closeMenu);
+        });
+    </script>
+</body>
+</html>
