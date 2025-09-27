@@ -23,25 +23,32 @@
 
     <header class="bg-white/80 dark:bg-slate-900/80 shadow-sm sticky top-0 z-40 backdrop-blur-sm">
         <nav class="container mx-auto px-4 sm:px-6 py-3 flex justify-between items-center">
-            <div class="text-xl font-bold text-slate-900 dark:text-slate-100">Sayyid Syuja Farrosy</div>
+            <div class="text-xl font-bold text-slate-900 dark:text-slate-100">
+                <a href="#hero" class="text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition">Beranda</a>
+            </div>
             <div class="flex items-center space-x-2 md:space-x-4">
                 <div class="hidden md:flex space-x-6">
+                    <a href="#skills" class="text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition">Keterampilan</a>
                     <a href="#about" class="text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition">Tentang Saya</a>
+                    <a href="#projects" class="text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition">Proyek Saya</a>
                     <a href="#experience" class="text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition">Pengalaman</a>
                     <a href="#education" class="text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition">Pendidikan</a>
-                    <a href="#skills" class="text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition">Keterampilan</a>
                     <a href="#certificates" class="text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition">Sertifikasi</a>
                 </div>
                 
                 <label for="theme-toggle" class="relative inline-flex items-center cursor-pointer">
                     <input type="checkbox" id="theme-toggle" class="sr-only peer">
-                    <div class="w-11 h-6 bg-gray-300 rounded-full peer dark:bg-gray-700 peer-checked:bg-slate-800 transition-colors duration-300"></div>
-                    <div class="absolute left-0.5 top-0.5 w-5 h-5 bg-white rounded-full transition-transform duration-300 transform peer-checked:translate-x-5 peer-checked:bg-white dark:peer-checked:bg-white dark:bg-gray-300"></div>
+                    <div class="w-14 h-7 bg-gray-200 rounded-full peer dark:bg-slate-700 peer-checked:bg-slate-700"></div>
+                    <div class="absolute left-1 top-1 w-5 h-5 bg-white rounded-full transition-all duration-300 transform peer-checked:translate-x-7 flex items-center justify-center">
+                        <svg class="w-4 h-4 text-slate-800 dark:hidden" fill="currentColor" viewBox="-1 0 19 19" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2.866 10.052H1.277a.554.554 0 0 1 0-1.109h1.589a.554.554 0 0 1 0 1.109zm1.65-3.984a.552.552 0 0 1-.392-.162L3.001 4.782a.554.554 0 0 1 .784-.784l1.123 1.124a.554.554 0 0 1-.392.946zm-1.123 9.09A.554.554 0 0 1 3 14.214l1.123-1.124a.554.554 0 0 1 .784.784l-1.123 1.123a.552.552 0 0 1-.392.163zm9.568-5.66a4.453 4.453 0 1 1-4.454-4.454 4.453 4.453 0 0 1 4.454 4.453zM8.5 4.417a.554.554 0 0 1-.554-.555V2.275a.554.554 0 1 1 1.108 0v1.588a.554.554 0 0 1-.554.555zm0 12.856a.554.554 0 0 1-.554-.554v-1.588a.554.554 0 0 1 1.108 0v1.588a.554.554 0 0 1-.554.554zm3.984-11.206a.554.554 0 0 1-.392-.946l1.123-1.123a.554.554 0 0 1 .784.783l-1.123 1.123a.551.551 0 0 1-.392.163zm1.123 9.09a.553.553 0 0 1-.392-.162l-1.123-1.123a.554.554 0 0 1 .784-.784l1.123 1.124a.554.554 0 0 1-.392.946zm2.116-5.106h-1.589a.554.554 0 0 1 0-1.109h1.589a.554.554 0 0 1 0 1.109z"></path>
+                        </svg>
+                        <svg class="w-4 h-4 text-slate-800 hidden dark:block" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.23129 2.24048C9.24338 1.78695 10.1202 2.81145 9.80357 3.70098C8.72924 6.71928 9.38932 10.1474 11.6193 12.3765C13.8606 14.617 17.3114 15.2755 20.3395 14.1819C21.2206 13.8637 22.2173 14.7319 21.7817 15.7199C21.7688 15.7491 21.7558 15.7782 21.7427 15.8074C20.9674 17.5266 19.7272 19.1434 18.1227 20.2274C16.4125 21.3828 14.3957 22.0001 12.3316 22.0001H12.3306C9.93035 21.9975 7.6057 21.1603 5.75517 19.6321C3.90463 18.1039 2.64345 15.9797 2.18793 13.6237C1.73241 11.2677 2.11094 8.82672 3.2586 6.71917C4.34658 4.72121 6.17608 3.16858 8.20153 2.25386L8.23129 2.24048Z"></path>
+                        </svg>
+                    </div>
                 </label>
                 
-                <a href="assets/CV_ATS_SAYYID_SYUJA_FARROSY.pdf" target="_blank" rel="noopener noreferrer" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition hidden md:block">
-                    Lihat CV
-                </a>
                 <button id="hamburger-button" class="md:hidden p-2 rounded-md text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-700">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
                 </button>
@@ -49,17 +56,159 @@
         </nav>
     </header>
 
-    <main class="container mx-auto px-4 sm:px-6 py-12">
-        <section id="hero" class="text-center pt-8 pb-12">
+    <main id="hero" class="container mx-auto px-4 sm:px-6 py-12">
+        <section class="text-center pt-8 pb-12">
              <img src="https://ui-avatars.com/api/?name=Sayyid+Syuja&background=3B82F6&color=fff&size=128" alt="Foto Sayyid Syuja Farrosy" class="w-32 h-32 rounded-full mx-auto mb-3 border-4 border-white dark:border-slate-700 shadow-lg" data-aos="zoom-in" data-aos-duration="1000">
             <h1 class="text-3xl md:text-5xl font-bold text-slate-900 dark:text-slate-100" data-aos="fade-down" data-aos-delay="200">Sayyid Syuja Farrosy</h1>
-            <p class="text-lg md:text-2xl text-blue-600 dark:text-blue-400 font-medium mt-1" data-aos="fade-down" data-aos-delay="400">IT Support & Frontend Developer Enthusiast</p>
+            <p class="text-lg md:text-2xl text-blue-600 dark:text-blue-400 font-medium mt-1" data-aos="fade-down" data-aos-delay="400">Junior Software Engineer</p>
             <p class="max-w-2xl mx-auto text-slate-600 dark:text-slate-400 mt-3 px-2" data-aos="fade-up" data-aos-delay="600">
-                Lulusan Rekayasa Perangkat Lunak dengan pengalaman sebagai IT Support, memiliki minat tinggi dalam pengembangan web. Siap berkontribusi dan beradaptasi dalam lingkungan kerja yang dinamis.
+            Mahasiswa aktif jurusan Ilmu Komputer di Cakrawala University dengan latar belakang sebagai lulusan Rekayasa Perangkat Lunak. Berbekal pengalaman praktik sebagai IT Support di Radjak Hospital Cileungsi, saya siap berkontribusi dan beradaptasi dalam lingkungan kerja yang dinamis.
             </p>
             <div class="mt-5 flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4" data-aos="fade-up" data-aos-delay="800">
                 <a href="#contact" class="bg-blue-600 text-white w-full sm:w-auto px-6 py-3 rounded-md hover:bg-blue-700 transition font-medium">Hubungi Saya</a>
-                <a href="https://www.linkedin.com/in/sayyid-syuja-farrosy/" target="_blank" class="bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 w-full sm:w-auto px-6 py-3 rounded-md hover:bg-slate-100 dark:hover:bg-slate-700 transition border border-slate-300 dark:border-slate-700 font-medium">LinkedIn</a>
+                <a href="assets/CV_ATS_SAYYID_SYUJA_FARROSY.pdf" target="_blank" class="bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 w-full sm:w-auto px-6 py-3 rounded-md hover:bg-slate-100 dark:hover:bg-slate-700 transition border border-slate-300 dark:border-slate-700 font-medium">Lihat CV</a>
+            </div>
+        </section>
+
+        <section id="skills" class="py-20">
+            <h2 class="text-3xl font-bold text-center mb-12 text-slate-900 dark:text-slate-100" data-aos="fade-up">Keterampilan</h2>
+            <div class="max-w-4xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 text-center" data-aos="fade-up" data-aos-delay="200">
+                
+                <div class="bg-slate-100 dark:bg-slate-800 p-4 rounded-lg flex flex-col items-center justify-center gap-3 transition-transform hover:scale-105" data-aos="fade-up" data-aos-delay="100">
+                    <svg class="w-10 h-10" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="16" cy="16" r="14" fill="#8892BF"></circle> 
+                        <path d="M14.4392 10H16.1192L15.6444 12.5242H17.154C17.9819 12.5419 18.5986 12.7269 19.0045 13.0793C19.4184 13.4316 19.5402 14.1014 19.3698 15.0881L18.5541 19.4889H16.8497L17.6288 15.2863C17.7099 14.8457 17.6856 14.533 17.5558 14.348C17.426 14.163 17.146 14.0705 16.7158 14.0705L15.3644 14.0573L14.3661 19.4889H12.6861L14.4392 10Z" fill="white"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M6.74092 12.5243H10.0036C10.9612 12.533 11.6552 12.8327 12.0854 13.4229C12.5156 14.0132 12.6576 14.8193 12.5115 15.8414C12.4548 16.3085 12.3289 16.7665 12.1341 17.2159C11.9474 17.6652 11.6878 18.0704 11.355 18.4317C10.9491 18.8898 10.5149 19.1805 10.0523 19.304C9.58969 19.4274 9.11076 19.489 8.61575 19.489H7.15484L6.69222 22H5L6.74092 12.5243ZM7.43485 17.9956L8.16287 14.0441H8.40879C8.49815 14.0441 8.5914 14.0396 8.6888 14.0309C9.33817 14.0221 9.87774 14.0882 10.308 14.2291C10.7462 14.37 10.8923 14.9031 10.7462 15.8282C10.5678 16.9296 10.2186 17.5727 9.69926 17.7577C9.1799 17.934 8.53053 18.0176 7.75138 18.0088H7.58094C7.53224 18.0088 7.48355 18.0043 7.43485 17.9956Z" fill="white"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M24.4365 12.5243H21.1738L19.4329 22H21.1251L21.5878 19.489H23.0487C23.5437 19.489 24.0226 19.4274 24.4852 19.304C24.9479 19.1805 25.382 18.8898 25.7879 18.4317C26.1207 18.0704 26.3803 17.6652 26.567 17.2159C26.7618 16.7665 26.8877 16.3085 26.9444 15.8414C27.0905 14.8193 26.9486 14.0132 26.5183 13.4229C26.0881 12.8327 25.3942 12.533 24.4365 12.5243ZM22.5958 14.0441L21.8678 17.9956C21.9165 18.0043 21.9652 18.0088 22.0139 18.0088H22.1843C22.9635 18.0176 23.6128 17.934 24.1322 17.7577C24.6515 17.5727 25.0007 16.9296 25.1792 15.8282C25.3253 14.9031 25.1792 14.37 24.7409 14.2291C24.3107 14.0882 23.7711 14.0221 23.1217 14.0309C23.0243 14.0396 22.9311 14.0441 22.8417 14.0441H22.5958Z" fill="white"></path> 
+                    </svg>
+                    <span class="font-semibold text-slate-700 dark:text-slate-300">PHP</span>
+                </div>
+
+                <div class="bg-slate-100 dark:bg-slate-800 p-4 rounded-lg flex flex-col items-center justify-center gap-3 transition-transform hover:scale-105" data-aos="fade-up" data-aos-delay="150">
+                    <svg class="w-10 h-10" viewBox="-4 0 264 264" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M255.855641,59.619717 C255.950565,59.9710596 256,60.3333149 256,60.6972536 L256,117.265345 C256,118.743206 255.209409,120.108149 253.927418,120.843385 L206.448786,148.178786 L206.448786,202.359798 C206.448786,203.834322 205.665123,205.195421 204.386515,205.937838 L105.27893,262.990563 C105.05208,263.119455 104.804608,263.201946 104.557135,263.289593 C104.464333,263.320527 104.376687,263.377239 104.278729,263.403017 C103.585929,263.58546 102.857701,263.58546 102.164901,263.403017 C102.051476,263.372083 101.948363,263.310215 101.840093,263.26897 C101.613244,263.186479 101.376082,263.1143 101.159544,262.990563 L2.07258227,205.937838 C0.7913718,205.201819 0,203.837372 0,202.359798 L0,32.6555248 C0,32.2843161 0.0515567729,31.9234187 0.144358964,31.5728326 C0.175293028,31.454252 0.24747251,31.3459828 0.288717928,31.2274022 C0.366053087,31.0108638 0.438232569,30.7891697 0.55165747,30.5880982 C0.628992629,30.4540506 0.742417529,30.3457814 0.83521972,30.2220451 C0.953800298,30.0570635 1.06206952,29.8869261 1.20127281,29.7425672 C1.31985339,29.6239866 1.4745237,29.5363401 1.60857131,29.4332265 C1.75808595,29.3094903 1.89213356,29.1754427 2.06227091,29.0774848 L2.06742659,29.0774848 L51.6134853,0.551122364 C52.8901903,-0.183535768 54.4613221,-0.183535768 55.7380271,0.551122364 L105.284086,29.0774848 L105.294397,29.0774848 C105.459379,29.1805983 105.598582,29.3094903 105.748097,29.4280708 C105.882144,29.5311844 106.031659,29.6239866 106.15024,29.7374115 C106.294599,29.8869261 106.397712,30.0570635 106.521448,30.2220451 C106.609095,30.3457814 106.727676,30.4540506 106.799855,30.5880982 C106.918436,30.7943253 106.985459,31.0108638 107.06795,31.2274022 C107.109196,31.3459828 107.181375,31.454252 107.212309,31.5779883 C107.307234,31.9293308 107.355765,32.2915861 107.356668,32.6555248 L107.356668,138.651094 L148.643332,114.878266 L148.643332,60.6920979 C148.643332,60.3312005 148.694889,59.9651474 148.787691,59.619717 C148.823781,59.4959808 148.890804,59.3877116 148.93205,59.269131 C149.014541,59.0525925 149.08672,58.8308984 149.200145,58.629827 C149.27748,58.4957794 149.390905,58.3875102 149.478552,58.2637739 C149.602288,58.0987922 149.705401,57.9286549 149.84976,57.7842959 C149.968341,57.6657153 150.117856,57.5780688 150.251903,57.4749553 C150.406573,57.351219 150.540621,57.2171714 150.705603,57.1192136 L150.710758,57.1192136 L200.261973,28.5928511 C201.538395,27.8571345 203.110093,27.8571345 204.386515,28.5928511 L253.932573,57.1192136 C254.107866,57.2223271 254.241914,57.351219 254.396584,57.4697996 C254.525476,57.5729132 254.674991,57.6657153 254.793572,57.7791402 C254.93793,57.9286549 255.041044,58.0987922 255.16478,58.2637739 C255.257582,58.3875102 255.371007,58.4957794 255.443187,58.629827 C255.561767,58.8308984 255.628791,59.0525925 255.711282,59.269131 C255.757683,59.3877116 255.824707,59.4959808 255.855641,59.619717 Z M247.740605,114.878266 L247.740605,67.8378666 L230.402062,77.8192579 L206.448786,91.6106946 L206.448786,138.651094 L247.745761,114.878266 L247.740605,114.878266 Z M198.194546,199.97272 L198.194546,152.901386 L174.633101,166.357704 L107.351512,204.757188 L107.351512,252.27191 L198.194546,199.97272 Z M8.25939501,39.7961379 L8.25939501,199.97272 L99.0921175,252.266755 L99.0921175,204.762344 L51.6392637,177.906421 L51.6237967,177.89611 L51.603174,177.885798 C51.443348,177.792996 51.3093004,177.658949 51.1597857,177.545524 C51.0308938,177.44241 50.8813791,177.359919 50.7679542,177.246494 L50.7576429,177.231027 C50.6235953,177.102135 50.5307931,176.942309 50.4173682,176.79795 C50.3142546,176.658747 50.1905184,176.540167 50.1080276,176.395808 L50.1028719,176.380341 C50.0100697,176.22567 49.9533572,176.040066 49.8863334,175.864773 C49.8193096,175.710103 49.7316631,175.565744 49.6904177,175.400762 L49.6904177,175.395606 C49.6388609,175.19969 49.6285496,174.993463 49.6079269,174.792392 C49.5873041,174.637722 49.5460587,174.483051 49.5460587,174.328381 L49.5460587,174.31807 L49.5460587,63.5689658 L25.5979377,49.7723734 L8.25939501,39.8012935 L8.25939501,39.7961379 Z M53.6809119,8.89300821 L12.3994039,32.6555248 L53.6706006,56.4180414 L94.9469529,32.6503692 L53.6706006,8.89300821 L53.6809119,8.89300821 Z M75.1491521,157.19091 L99.0972731,143.404629 L99.0972731,39.7961379 L81.7587304,49.7775291 L57.8054537,63.5689658 L57.8054537,167.177457 L75.1491521,157.19091 Z M202.324244,36.934737 L161.047891,60.6972536 L202.324244,84.4597702 L243.59544,60.6920979 L202.324244,36.934737 Z M198.194546,91.6106946 L174.24127,77.8192579 L156.902727,67.8378666 L156.902727,114.878266 L180.850848,128.664547 L198.194546,138.651094 L198.194546,91.6106946 Z M103.216659,197.616575 L163.759778,163.052915 L194.023603,145.781396 L152.778185,122.034346 L105.289242,149.374903 L62.0073307,174.292291 L103.216659,197.616575 Z" fill="#FF2D20"></path>
+                    </svg>
+                    <span class="font-semibold text-slate-700 dark:text-slate-300">Laravel</span>
+                </div>
+
+                <div class="bg-slate-100 dark:bg-slate-800 p-4 rounded-lg flex flex-col items-center justify-center gap-3 transition-transform hover:scale-105" data-aos="fade-up" data-aos-delay="200">
+                    <svg class="w-10 h-10" fill="#DD4814" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                        <title>codeigniter</title>
+                        <path d="M15.333 1.004c1.1 1.778-0.35 4.131-1.508 5.446-1.123 1.275-2.489 2.341-3.73 3.499-1.344 1.223-2.559 2.536-3.655 3.945l-0.052 0.070c-1.75 2.074-2.814 4.776-2.814 7.727 0 0.892 0.097 1.762 0.282 2.599l-0.015-0.080c1.123 3.498 4.043 6.111 7.646 6.775l0.061 0.009c-1.922-0.827-3.285-2.62-3.485-4.751l-0.002-0.023c0.13-2.236 1.336-4.165 3.103-5.29l0.027-0.016c-0.117 0.273-0.185 0.59-0.185 0.923 0 0.48 0.141 0.928 0.384 1.303l-0.006-0.009c0.381 0.518 0.988 0.85 1.673 0.85 1.143 0 2.070-0.927 2.070-2.070 0-0.654-0.303-1.237-0.777-1.616l-0.004-0.003c-1.079-0.86-1.765-2.174-1.765-3.648 0-0.202 0.013-0.401 0.038-0.596l-0.002 0.023c0.241-0.898 0.733-1.66 1.395-2.228l0.006-0.005c-0.512 1.347 0.943 2.674 1.903 3.337 1.937 1.142 3.575 2.251 5.142 3.449l-0.123-0.090c1.567 1.206 2.567 3.083 2.567 5.194 0 0.123-0.003 0.244-0.010 0.365l0.001-0.017c-0.42 2.337-2.083 4.202-4.267 4.906l-0.045 0.012c4.526-1 9.204-4.511 9.297-9.531 0.116-3.789-2.378-7.144-6.446-9.227 0.081 0.15 0.129 0.329 0.129 0.518 0 0.238-0.075 0.459-0.204 0.64l0.002-0.003c-0.397 0.616-1.079 1.018-1.856 1.018-0.676 0-1.281-0.305-1.684-0.785l-0.003-0.003c-1.506-1.934 0.031-4.019 0.246-6.067 0.002-0.068 0.003-0.147 0.003-0.227 0-2.616-1.312-4.926-3.314-6.307l-0.026-0.017z"></path>
+                    </svg>
+                    <span class="font-semibold text-slate-700 dark:text-slate-300">CodeIgniter</span>
+                </div>
+
+                <div class="bg-slate-100 dark:bg-slate-800 p-4 rounded-lg flex flex-col items-center justify-center gap-3 transition-transform hover:scale-105" data-aos="fade-up" data-aos-delay="250">
+                    <svg class="w-10 h-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 118 94" width="118" height="94">
+                        <title>Bootstrap</title>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.132 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94h69.02c6.733 0 11.715-5.893 11.492-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.482 5.404-10.598 10.951-11.132v-5.972c-5.547-.529-8.934-4.649-10.951-11.132-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.232 0 93.53 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z" fill="#7952B3"></path>
+                    </svg>
+                    <span class="font-semibold text-slate-700 dark:text-slate-300">Bootstrap</span>
+                </div>
+
+                <div class="bg-slate-100 dark:bg-slate-800 p-4 rounded-lg flex flex-col items-center justify-center gap-3 transition-transform hover:scale-105" data-aos="fade-up" data-aos-delay="300">
+                    <svg class="w-10 h-10 text-slate-800 dark:text-white" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.168 6.839 9.492.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.031-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.338 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0022 12c0-5.523-4.477-10-10-10z" clip-rule="evenodd" /></svg>
+                    <span class="font-semibold text-slate-700 dark:text-slate-300">GitHub</span>
+                </div>
+                
+                <div class="bg-slate-100 dark:bg-slate-800 p-4 rounded-lg flex flex-col items-center justify-center gap-3 transition-transform hover:scale-105" data-aos="fade-up" data-aos-delay="350">
+                    <svg class="w-10 h-10 text-sky-500" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M1.5 1.5H11.25V11.25H1.5V1.5ZM1.5 12.75H11.25V22.5H1.5V12.75ZM12.75 1.5H22.5V11.25H12.75V1.5ZM12.75 12.75H22.5V22.5H12.75V12.75Z"/></svg>
+                    <span class="font-semibold text-slate-700 dark:text-slate-300 text-xs sm:text-sm">Troubleshooting OS</span>
+                </div>
+
+                <div class="bg-slate-100 dark:bg-slate-800 p-4 rounded-lg flex flex-col items-center justify-center gap-3 transition-transform hover:scale-105" data-aos="fade-up" data-aos-delay="400">
+                    <svg class="w-10 h-10" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <title>Microsoft Word</title>
+                        <rect x="8" y="2" width="24" height="28" rx="2" fill="url(#paint0_linear_word)"></rect>
+                        <path d="M8 23H32V28C32 29.1046 31.1046 30 30 30H10C8.89543 30 8 29.1046 8 28V23Z" fill="url(#paint1_linear_word)"></path>
+                        <rect x="8" y="16" width="24" height="7" fill="url(#paint2_linear_word)"></rect>
+                        <rect x="8" y="9" width="24" height="7" fill="url(#paint3_linear_word)"></rect>
+                        <path d="M8 12C8 10.3431 9.34315 9 11 9H17C18.6569 9 20 10.3431 20 12V24C20 25.6569 18.6569 27 17 27H8V12Z" fill="#000000" fill-opacity="0.3"></path>
+                        <rect y="7" width="18" height="18" rx="2" fill="url(#paint4_linear_word)"></rect>
+                        <path d="M15 11.0142H13.0523L11.5229 17.539L9.84967 11H8.20261L6.51634 17.539L5 11.0142H3L5.60131 21H7.3268L9 14.6879L10.6732 21H12.3987L15 11.0142Z" fill="white"></path>
+                        <defs>
+                            <linearGradient id="paint0_linear_word" x1="8" y1="6.66667" x2="32" y2="6.66667" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#2B78B1"></stop>
+                                <stop offset="1" stop-color="#338ACD"></stop>
+                            </linearGradient>
+                            <linearGradient id="paint1_linear_word" x1="8" y1="27.375" x2="32" y2="27.375" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#1B366F"></stop>
+                                <stop offset="1" stop-color="#2657B0"></stop>
+                            </linearGradient>
+                            <linearGradient id="paint2_linear_word" x1="18.5" y1="20" x2="32" y2="20" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#20478B"></stop>
+                                <stop offset="1" stop-color="#2D6FD1"></stop>
+                            </linearGradient>
+                            <linearGradient id="paint3_linear_word" x1="18.5" y1="13" x2="32" y2="13" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#215295"></stop>
+                                <stop offset="1" stop-color="#2E84D3"></stop>
+                            </linearGradient>
+                            <linearGradient id="paint4_linear_word" x1="0" y1="17" x2="19" y2="17" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#223E74"></stop>
+                                <stop offset="1" stop-color="#215091"></stop>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <span class="font-semibold text-slate-700 dark:text-slate-300">Microsoft Word</span>
+                </div>
+                
+                <div class="bg-slate-100 dark:bg-slate-800 p-4 rounded-lg flex flex-col items-center justify-center gap-3 transition-transform hover:scale-105" data-aos="fade-up" data-aos-delay="450">
+                    <svg class="w-10 h-10" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                        <title>Microsoft Excel</title>
+                        <path d="M28.781,4.405H18.651V2.018L2,4.588V27.115l16.651,2.868V26.445H28.781A1.162,1.162,0,0,0,30,25.349V5.5A1.162,1.162,0,0,0,28.781,4.405Zm.16,21.126H18.617L18.6,23.642h2.487v-2.2H18.581l-.012-1.3h2.518v-2.2H18.55l-.012-1.3h2.549v-2.2H18.53v-1.3h2.557v-2.2H18.53v-1.3h2.557v-2.2H18.53v-2H28.941Z" style="fill:#20744a;fill-rule:evenodd"></path>
+                        <rect x="22.487" y="7.439" width="4.323" height="2.2" style="fill:#20744a"></rect>
+                        <rect x="22.487" y="10.94" width="4.323" height="2.2" style="fill:#20744a"></rect>
+                        <rect x="22.487" y="14.441" width="4.323" height="2.2" style="fill:#20744a"></rect>
+                        <rect x="22.487" y="17.942" width="4.323" height="2.2" style="fill:#20744a"></rect>
+                        <rect x="22.487" y="21.443" width="4.323" height="2.2" style="fill:#20744a"></rect>
+                        <polygon points="6.347 10.673 8.493 10.55 9.842 14.259 11.436 10.397 13.582 10.274 10.976 15.54 13.582 20.819 11.313 20.666 9.781 16.642 8.248 20.513 6.163 20.329 8.585 15.666 6.347 10.673" style="fill:#ffffff;fill-rule:evenodd"></polygon>
+                    </svg>
+                    <span class="font-semibold text-slate-700 dark:text-slate-300">Microsoft Excel</span>
+                </div>
+
+                <div class="bg-slate-100 dark:bg-slate-800 p-4 rounded-lg flex flex-col items-center justify-center gap-3 transition-transform hover:scale-105" data-aos="fade-up" data-aos-delay="500">
+                    <svg class="w-10 h-10" viewBox="-52.5 0 361 361" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                        <title>HTML5</title>
+                        <path d="M255.554813,70.7657143 L232.31367,331.125451 L127.843868,360.087912 L23.6617143,331.166242 L0.445186813,70.7657143 L255.554813,70.7657143 Z" fill="#E44D26"></path>
+                        <path d="M128,337.950242 L212.416703,314.546637 L232.277802,92.0573187 L128,92.0573187 L128,337.950242 Z" fill="#F16529"></path>
+                        <path d="M82.8202198,155.932132 L128,155.932132 L128,123.994725 L47.917011,123.994725 L48.6814945,132.562989 L56.530989,220.572835 L128,220.572835 L128,188.636132 L85.7389011,188.636132 L82.8202198,155.932132 Z" fill="#EBEBEB"></path>
+                        <path d="M90.0177582,236.54189 L57.957978,236.54189 L62.4323516,286.687648 L127.853011,304.848879 L128,304.808088 L128,271.580132 L127.860044,271.617407 L92.2915165,262.013187 L90.0177582,236.54189 Z" fill="#EBEBEB"></path>
+                        <path d="M127.889582,220.572835 L167.216527,220.572835 L163.509451,261.992791 L127.889582,271.606857 L127.889582,304.833407 L193.362286,286.687648 L193.842637,281.291956 L201.347516,197.212132 L202.126769,188.636132 L127.889582,188.636132 L127.889582,220.572835 Z" fill="#FFFFFF"></path>
+                        <path d="M127.889582,155.854066 L127.889582,155.932132 L205.032791,155.932132 L205.673495,148.753582 L207.128615,132.562989 L207.892396,123.994725 L127.889582,123.994725 L127.889582,155.854066 Z" fill="#FFFFFF"></path>
+                    </svg>
+                    <span class="font-semibold text-slate-700 dark:text-slate-300">HTML</span>
+                </div>
+
+                <div class="bg-slate-100 dark:bg-slate-800 p-4 rounded-lg flex flex-col items-center justify-center gap-3 transition-transform hover:scale-105" data-aos="fade-up" data-aos-delay="550">
+                    <svg class="w-10 h-10" viewBox="-52.5 0 361 361" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                        <title>CSS3</title>
+                        <path d="M127.843868,360.087912 L23.6617143,331.166242 L0.445186813,70.7657143 L255.554813,70.7657143 L232.31367,331.125451 L127.843868,360.087912 Z" fill="#264DE4"></path>
+                        <path d="M212.416703,314.546637 L232.277802,92.0573187 L128,92.0573187 L128,337.950242 L212.416703,314.546637 Z" fill="#2965F1"></path>
+                        <path d="M53.6685714,188.636132 L56.530989,220.572835 L128,220.572835 L128,188.636132 L53.6685714,188.636132 Z" fill="#EBEBEB"></path>
+                        <path d="M47.917011,123.994725 L50.8202198,155.932132 L128,155.932132 L128,123.994725 L47.917011,123.994725 Z" fill="#EBEBEB"></path>
+                        <path d="M128,271.580132 L127.860044,271.617407 L92.2915165,262.013187 L90.0177582,236.54189 L57.957978,236.54189 L62.4323516,286.687648 L127.853011,304.848879 L128,304.808088 L128,271.580132 Z" fill="#EBEBEB"></path>
+                        <path d="M202.126769,188.636132 L207.892396,123.994725 L127.889582,123.994725 L127.889582,155.932132 L172.892132,155.932132 L169.98611,188.636132 L127.889582,188.636132 L127.889582,220.572835 L167.216527,220.572835 L163.509451,261.992791 L127.889582,271.606857 L127.889582,304.833407 L193.362286,286.687648 L193.842637,281.291956 L201.347516,197.212132 L202.126769,188.636132 Z" fill="#FFFFFF"></path>
+                    </svg>
+                    <span class="font-semibold text-slate-700 dark:text-slate-300">CSS</span>
+                </div>
+
+                <div class="bg-slate-100 dark:bg-slate-800 p-4 rounded-lg flex flex-col items-center justify-center gap-3 transition-transform hover:scale-105" data-aos="fade-up" data-aos-delay="650">
+                    <svg class="w-10 h-10" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                        <title>JavaScript</title>
+                        <path d="M0,0 L256,0 L256,256 L0,256 L0,0 Z" fill="#F7DF1E"></path>
+                        <path d="M67.311746,213.932292 L86.902654,202.076241 C90.6821079,208.777346 94.1202286,214.447137 102.367086,214.447137 C110.272203,214.447137 115.256076,211.354819 115.256076,199.326883 L115.256076,117.528787 L139.313575,117.528787 L139.313575,199.666997 C139.313575,224.58433 124.707759,235.925943 103.3984,235.925943 C84.1532952,235.925943 72.9819429,225.958603 67.3113397,213.93026" fill="#000000"></path>
+                        <path d="M152.380952,211.354413 L171.969422,200.0128 C177.125994,208.433981 183.827911,214.619835 195.684368,214.619835 C205.652521,214.619835 212.009041,209.635962 212.009041,202.762159 C212.009041,194.513676 205.479416,191.592025 194.481168,186.78207 L188.468419,184.202565 C171.111213,176.81473 159.597308,167.53534 159.597308,147.944838 C159.597308,129.901308 173.344508,116.153295 194.825752,116.153295 C210.119924,116.153295 221.117765,121.48094 229.021663,135.400432 L210.29059,147.428775 C206.166146,140.040127 201.699556,137.119289 194.826159,137.119289 C187.78047,137.119289 183.312254,141.587098 183.312254,147.428775 C183.312254,154.646349 187.78047,157.568406 198.089956,162.036622 L204.103924,164.614095 C224.553448,173.378641 236.067352,182.313448 236.067352,202.418387 C236.067352,224.071924 219.055137,235.927975 196.200432,235.927975 C173.860978,235.927975 159.425829,225.274311 152.381359,211.354413" fill="#000000"></path>
+                    </svg>
+                    <span class="font-semibold text-slate-700 dark:text-slate-300">JavaScript</span>
+                </div>
+
+                <div class="bg-slate-100 dark:bg-slate-800 p-4 rounded-lg flex flex-col items-center justify-center gap-3 transition-transform hover:scale-105" data-aos="fade-up" data-aos-delay="700">
+                    <svg class="w-10 h-10" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                        <title>Tailwind CSS</title>
+                        <path d="M9,13.7q1.4-5.6,7-5.6c5.6,0,6.3,4.2,9.1,4.9q2.8.7,4.9-2.1-1.4,5.6-7,5.6c-5.6,0-6.3-4.2-9.1-4.9Q11.1,10.9,9,13.7ZM2,22.1q1.4-5.6,7-5.6c5.6,0,6.3,4.2,9.1,4.9q2.8.7,4.9-2.1-1.4,5.6-7,5.6c-5.6,0-6.3-4.2-9.1-4.9Q4.1,19.3,2,22.1Z" style="fill:#44a8b3"></path>
+                    </svg>
+                    <span class="font-semibold text-slate-700 dark:text-slate-300">Tailwind CSS</span>
+                </div>
+
             </div>
         </section>
         
@@ -67,10 +216,44 @@
             <h2 class="text-3xl font-bold text-center mb-12 text-slate-900 dark:text-slate-100" data-aos="fade-up">Tentang Saya</h2>
             <div class="max-w-3xl mx-auto bg-white dark:bg-slate-800 p-6 md:p-8 rounded-lg shadow-md transition-transform duration-300 hover:-translate-y-1" data-aos="fade-up" data-aos-delay="200">
                 <p class="text-slate-600 dark:text-slate-400 leading-relaxed text-justify">
-                    Saya Sayyid Syuja Farrosy, seorang lulusan SMK Fatahillah Cileungsi jurusan Rekayasa Perangkat Lunak yang memiliki minat kuat pada bidang IT Support dan Frontend Development. Selama pengalaman Praktik Kerja Lapangan (PKL) sebagai IT Support, saya telah mengasah kemampuan komunikasi, ketelitian, dan manajemen waktu yang baik. Saya adalah individu yang siap untuk belajar, berkontribusi secara aktif dalam tim, dan cepat beradaptasi dengan lingkungan serta teknologi baru.
+                    Saya Sayyid Syuja Farrosy, seorang lulusan SMK Fatahillah Cileungsi jurusan Rekayasa Perangkat Lunak yang memiliki minat kuat pada bidang Software Engineer dan Frontend Development. Selama pengalaman Praktik Kerja Lapangan (PKL) sebagai IT Support, saya telah mengasah kemampuan komunikasi, ketelitian, dan manajemen waktu yang baik. Saya adalah individu yang siap untuk belajar, berkontribusi secara aktif dalam tim, dan cepat beradaptasi dengan lingkungan serta teknologi baru.
                 </p>
             </div>
         </section>
+
+        <section id="projects" class="py-20 bg-slate-100 dark:bg-slate-950/50">
+            <div class="container mx-auto px-4 sm:px-6">
+                <h2 class="text-3xl font-bold text-center mb-12 text-slate-900 dark:text-slate-100" data-aos="fade-up">Proyek Saya</h2>
+                <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" data-aos="fade-up" data-aos-delay="200">
+        
+                    <div class="bg-white dark:bg-slate-800 rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl" data-aos="fade-up" data-aos-delay="300">
+                        <img src="assets/img/presensigps.png" alt="Proyek Presensi GPS" class="w-full h-48 object-cover">
+                        <div class="p-5">
+                            <h3 class="text-lg font-bold text-slate-800 dark:text-slate-200">Presensi Berbasis Kamera & GPS (User Role)</h3>
+                            <p class="text-slate-600 dark:text-slate-400 mt-2 text-sm">Leafet.js, Laravel 11, DatePicker, Bootstrap, PHP2Excel.</p>
+                        </div>
+                    </div>
+        
+                    <div class="bg-white dark:bg-slate-800 rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl" data-aos="fade-up" data-aos-delay="400">
+                        <img src="assets/img/perpus.png" alt="Proyek Aplikasi Perpustakaan" class="w-full h-48 object-cover">
+                        <div class="p-5">
+                            <h3 class="text-lg font-bold text-slate-800 dark:text-slate-200">Aplikasi Perpustakaan (CRUD)</h3>
+                            <p class="text-slate-600 dark:text-slate-400 mt-2 text-sm">Laravel 8 dan Boostrap.</p>
+                        </div>
+                    </div>
+        
+                    <div class="bg-white dark:bg-slate-800 rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl" data-aos="fade-up" data-aos-delay="500">
+                        <img src="assets/img/rs.png" alt="Proyek Form Input Output" class="w-full h-48 object-cover">
+                        <div class="p-5">
+                            <h3 class="text-lg font-bold text-slate-800 dark:text-slate-200">Form Input & Output Digital</h3>
+                            <p class="text-slate-600 dark:text-slate-400 mt-2 text-sm">Code Igniter 3, HTML2PDF, PHP.</p>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+        </section>
+        
         <section id="experience" class="py-20 bg-slate-100 dark:bg-slate-950/50 -mx-4 sm:-mx-6 px-4 sm:px-6">
              <h2 class="text-3xl font-bold text-center mb-12 text-slate-900 dark:text-slate-100" data-aos="fade-up">Pengalaman Kerja</h2>
              <div class="max-w-3xl mx-auto">
@@ -109,37 +292,61 @@
                  </div>
              </div>
         </section>
-        <section id="skills" class="py-20 bg-slate-100 dark:bg-slate-950/50 -mx-4 sm:-mx-6 px-4 sm:px-6">
-            <h2 class="text-3xl font-bold text-center mb-12 text-slate-900 dark:text-slate-100" data-aos="fade-up">Keterampilan</h2>
-            <div class="max-w-4xl mx-auto flex flex-wrap justify-center gap-3" data-aos="fade-up" data-aos-delay="200">
-                <span class="bg-blue-100 text-blue-800 dark:bg-blue-900/50 dark:text-blue-300 text-sm font-medium px-4 py-2 rounded-full transition-transform hover:scale-110" data-aos="zoom-in-up" data-aos-delay="100">PHP</span>
-                <span class="bg-blue-100 text-blue-800 dark:bg-blue-900/50 dark:text-blue-300 text-sm font-medium px-4 py-2 rounded-full transition-transform hover:scale-110" data-aos="zoom-in-up" data-aos-delay="150">Laravel 8 dan 11</span>
-                <span class="bg-blue-100 text-blue-800 dark:bg-blue-900/50 dark:text-blue-300 text-sm font-medium px-4 py-2 rounded-full transition-transform hover:scale-110" data-aos="zoom-in-up" data-aos-delay="200">Codeigniter 3</span>
-                <span class="bg-blue-100 text-blue-800 dark:bg-blue-900/50 dark:text-blue-300 text-sm font-medium px-4 py-2 rounded-full transition-transform hover:scale-110" data-aos="zoom-in-up" data-aos-delay="250">Bootstrap</span>
-                <span class="bg-blue-100 text-blue-800 dark:bg-blue-900/50 dark:text-blue-300 text-sm font-medium px-4 py-2 rounded-full transition-transform hover:scale-110" data-aos="zoom-in-up" data-aos-delay="300">Github</span>
-                <span class="bg-green-100 text-green-800 dark:bg-green-900/50 dark:text-green-300 text-sm font-medium px-4 py-2 rounded-full transition-transform hover:scale-110" data-aos="zoom-in-up" data-aos-delay="350">Instalasi & troubleshooting OS (Windows)</span>
-                <span class="bg-gray-200 text-gray-800 dark:bg-gray-700 dark:text-gray-300 text-sm font-medium px-4 py-2 rounded-full transition-transform hover:scale-110" data-aos="zoom-in-up" data-aos-delay="400">Microsoft Word</span>
-                <span class="bg-gray-200 text-gray-800 dark:bg-gray-700 dark:text-gray-300 text-sm font-medium px-4 py-2 rounded-full transition-transform hover:scale-110" data-aos="zoom-in-up" data-aos-delay="450">Microsoft Excel</span>
-            </div>
-        </section>
-        
         <section id="certificates" class="py-20">
             <h2 class="text-3xl font-bold text-center mb-4 text-slate-900 dark:text-slate-100" data-aos="fade-up">Sertifikasi</h2>
-            <p class="text-center text-slate-500 dark:text-slate-400 mb-8" data-aos="fade-up" data-aos-delay="100">(Klik pada setiap item untuk melihat sertifikat)</p>
+            <p class="text-center text-slate-500 dark:text-slate-400 mb-12" data-aos="fade-up" data-aos-delay="100">(Klik pada setiap kartu untuk melihat sertifikat)</p>
             
-            <div class="max-w-3xl mx-auto space-y-4" data-aos="fade-up" data-aos-delay="200">
-                <a href="assets/sertifikat-uji-kompetensi.pdf" class="glightbox block bg-white dark:bg-slate-800 p-4 rounded-lg shadow-md text-slate-700 dark:text-slate-300 transition-transform duration-300 hover:-translate-y-1 hover:text-blue-600 dark:hover:text-blue-400">Sertifikat Uji Kompetensi - IDN Networkers</a>
-                <a href="assets/sertifikat-pkl.pdf" class="glightbox block bg-white dark:bg-slate-800 p-4 rounded-lg shadow-md text-slate-700 dark:text-slate-300 transition-transform duration-300 hover:-translate-y-1 hover:text-blue-600 dark:hover:text-blue-400">Sertifikat PKL Radjak Hospital Cileungsi</a>
-                <a href="assets/Meniti Karier sebagai Software Developer.pdf" class="glightbox block bg-white dark:bg-slate-800 p-4 rounded-lg shadow-md text-slate-700 dark:text-slate-300 transition-transform duration-300 hover:-translate-y-1 hover:text-blue-600 dark:hover:text-blue-400">Dicoding: Meniti Karier sebagai Software Developer</a>
-                <a href="assets/Memulai Dasar Pemrograman untuk Menjadi Pengembang.pdf" class="glightbox block bg-white dark:bg-slate-800 p-4 rounded-lg shadow-md text-slate-700 dark:text-slate-300 transition-transform duration-300 hover:-translate-y-1 hover:text-blue-600 dark:hover:text-blue-400">Dicoding: Memulai Dasar Pemrograman untuk Menjadi Pengembang</a>
-                <a href="assets/Pengenalan Data pada Pemrograman (Data 101).pdf" class="glightbox block bg-white dark:bg-slate-800 p-4 rounded-lg shadow-md text-slate-700 dark:text-slate-300 transition-transform duration-300 hover:-translate-y-1 hover:text-blue-600 dark:hover:text-blue-400">Dicoding: Pengenalan Data pada Pemrograman (Data 101)</a>
-                <a href="assets/Pengenalan ke Logika Pemrograman (Programming Logic 101).pdf" class="glightbox block bg-white dark:bg-slate-800 p-4 rounded-lg shadow-md text-slate-700 dark:text-slate-300 transition-transform duration-300 hover:-translate-y-1 hover:text-blue-600 dark:hover:text-blue-400">Dicoding: Pengenalan ke Logika Pemrograman (Programming Logic 101)</a>
-                <a href="assets/Belajar Dasar Cloud dan Gen AI di AWS.pdf" class="glightbox block bg-white dark:bg-slate-800 p-4 rounded-lg shadow-md text-slate-700 dark:text-slate-300 transition-transform duration-300 hover:-translate-y-1 hover:text-blue-600 dark:hover:text-blue-400">Dicoding: Belajar Dasar Cloud dan Gen AI di AWS</a>
-                <a href="assets/Belajar Dasar Git dengan GitHub.pdf" class="glightbox block bg-white dark:bg-slate-800 p-4 rounded-lg shadow-md text-slate-700 dark:text-slate-300 transition-transform duration-300 hover:-translate-y-1 hover:text-blue-600 dark:hover:text-blue-400">Dicoding: Belajar Dasar Git dengan GitHub</a>
-                <a href="assets/Introduction to HTML.pdf" class="glightbox block bg-white dark:bg-slate-800 p-4 rounded-lg shadow-md text-slate-700 dark:text-slate-300 transition-transform duration-300 hover:-translate-y-1 hover:text-blue-600 dark:hover:text-blue-400">SoloLearn: Introduction to HTML</a>
-            </div>
+            <div class="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8" data-aos="fade-up" data-aos-delay="200">
+                
+                <a href="assets/Sertifikat Uji Kompetensi - IDN Networkers.pdf" class="glightbox block bg-white dark:bg-slate-800 rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl" data-aos="fade-up" data-aos-delay="300">
+                    <img src="assets/img/sertifikat-ujikom.png" alt="Sertifikat Uji Kompetensi" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <p class="font-semibold text-slate-700 dark:text-slate-300">Sertifikat Uji Kompetensi - IDN Networkers</p>
+                        <p class="text-sm text-slate-500 dark:text-slate-400 mt-1">2025-2028</p>
+                    </div>
+                </a>
+
+                <a href="assets/sertifikat-pkl.pdf" class="glightbox block bg-white dark:bg-slate-800 rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl" data-aos="fade-up" data-aos-delay="400">
+                    <img src="assets/img/sertifikat-pkl.png" alt="Sertifikat PKL" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <p class="font-semibold text-slate-700 dark:text-slate-300">Sertifikat PKL Radjak Hospital Cileungsi</p>
+                        <p class="text-sm text-slate-500 dark:text-slate-400 mt-1">2024</p>
+                    </div>
+                </a>
+                <a href="assets/Belajar Dasar Cloud dan Gen AI di AWS.pdf" class="glightbox block bg-white dark:bg-slate-800 rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl" data-aos="fade-up" data-aos-delay="400">
+                    <img src="assets/img/dicoding-aws.png" alt="Sertifikat PKL" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <p class="font-semibold text-slate-700 dark:text-slate-300">Dicoding : Belajar Dasar Cloud dan Gen AI di AWS</p>
+                        <p class="text-sm text-slate-500 dark:text-slate-400 mt-1">2025-2028</p>
+                    </div>
+                </a>
+                
+                <a href="assets/Meniti Karier sebagai Software Developer.pdf" class="glightbox block bg-white dark:bg-slate-800 rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl" data-aos="fade-up" data-aos-delay="500">
+                    <img src="assets/img/dicoding-software-developer.png" alt="Sertifikat Dicoding" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <p class="font-semibold text-slate-700 dark:text-slate-300">Dicoding: Meniti Karier Software Developer</p>
+                        <p class="text-sm text-slate-500 dark:text-slate-400 mt-1">2023-2026</p>
+                    </div>
+                </a>
+
+                <a href="assets/Memulai Dasar Pemrograman untuk Menjadi Pengembang.pdf" class="glightbox block bg-white dark:bg-slate-800 rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl" data-aos="fade-up" data-aos-delay="300">
+                    <img src="assets/img/dicoding-dasar-pemrograman.png" alt="Sertifikat Dicoding" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <p class="font-semibold text-slate-700 dark:text-slate-300">Dicoding: Memulai Dasar Pemrograman</p>
+                        <p class="text-sm text-slate-500 dark:text-slate-400 mt-1">2023-2026</p>
+                    </div>
+                </a>
+
+                <a href="assets/Introduction to HTML.pdf" class="glightbox block bg-white dark:bg-slate-800 rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl" data-aos="fade-up" data-aos-delay="400">
+                    <img src="assets/img/sololearn-html.png" alt="Sertifikat SoloLearn HTML" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <p class="font-semibold text-slate-700 dark:text-slate-300">SoloLearn: Introduction to HTML</p>
+                        <p class="text-sm text-slate-500 dark:text-slate-400 mt-1">2023</p>
+                    </div>
+                </a>
+                
+                </div>
         </section>
-        
         <section id="contact" class="py-20 bg-slate-800 dark:bg-slate-950 -mx-4 sm:-mx-6 px-4 sm:px-6 text-center">
             <div data-aos="fade-up">
                 <h2 class="text-3xl font-bold mb-4 text-white">Hubungi Saya</h2>
@@ -187,12 +394,12 @@
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
                 </button>
             </div>
+            <a href="#skills" class="block py-2 px-2 text-sm text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-700 rounded">Keterampilan</a>
             <a href="#about" class="block py-2 px-2 text-sm text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-700 rounded">Tentang Saya</a>
+            <a href="#projects" class="block py-2 px-2 text-sm text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-700 rounded">Proyek Saya</a>
             <a href="#experience" class="block py-2 px-2 text-sm text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-700 rounded">Pengalaman</a>
             <a href="#education" class="block py-2 px-2 text-sm text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-700 rounded">Pendidikan</a>
-            <a href="#skills" class="block py-2 px-2 text-sm text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-700 rounded">Keterampilan</a>
             <a href="#certificates" class="block py-2 px-2 text-sm text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-700 rounded">Sertifikasi</a>
-            <a href="assets/CV_ATS_SAYYID_SYUJA_FARROSY.pdf" target="_blank" rel="noopener noreferrer" class="block py-2 px-2 text-sm text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-700 rounded">Lihat CV</a>
         </div>
     </div>
     
