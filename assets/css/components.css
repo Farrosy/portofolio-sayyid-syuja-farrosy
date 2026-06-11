@@ -1,0 +1,263 @@
+/* ============================================================
+   components.css
+   Layer 3: Komponen reusable — button, card, timeline, dst.
+============================================================ */
+
+/* ── Buttons ───────────────────────────────────────────── */
+.btn {
+  display: inline-block;
+  padding: 0.65rem 1.5rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color var(--transition), color var(--transition), border-color var(--transition);
+}
+
+.btn--primary {
+  background-color: var(--color-accent);
+  color: #ffffff;
+  border: 1px solid transparent;
+}
+
+.btn--primary:hover {
+  background-color: var(--color-accent-hover);
+}
+
+.btn--secondary {
+  background-color: var(--color-bg-card);
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+}
+
+.btn--secondary:hover {
+  background-color: var(--color-bg-alt);
+}
+
+
+/* ── Skill cards ───────────────────────────────────────── */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+  max-width: 800px;
+  margin-inline: auto;
+}
+
+.skill-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 1.25rem 1rem;
+  background-color: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  transition: transform var(--transition), box-shadow var(--transition), background-color var(--transition);
+}
+
+.skill-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px var(--color-shadow);
+}
+
+.skill-card__icon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  color: var(--color-accent);
+}
+
+.skill-card__label {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--color-text-muted);
+  text-align: center;
+}
+
+
+/* ── About card ────────────────────────────────────────── */
+.about-card {
+  max-width: 700px;
+  margin-inline: auto;
+  padding: 2rem;
+  background-color: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  color: var(--color-text-muted);
+  line-height: 1.8;
+  text-align: justify;
+  transition: background-color var(--transition), border-color var(--transition);
+}
+
+
+/* ── Project cards ─────────────────────────────────────── */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin-inline: auto;
+}
+
+.project-card {
+  background-color: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: transform var(--transition), box-shadow var(--transition), background-color var(--transition);
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px var(--color-shadow);
+}
+
+.project-card__img {
+  width: 100%;
+  height: 185px;
+  object-fit: cover;
+}
+
+.project-card__body {
+  padding: 1.25rem;
+}
+
+.project-card__title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 0.4rem;
+}
+
+.project-card__stack {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+}
+
+
+/* ── Timeline (experience & education) ─────────────────── */
+.timeline {
+  max-width: 700px;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.timeline-item {
+  background-color: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  transition: background-color var(--transition), border-color var(--transition);
+}
+
+.timeline-item__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.75rem;
+}
+
+.timeline-item__role {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.timeline-item__company {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--color-accent);
+  margin-top: 0.15rem;
+}
+
+.timeline-item__date {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  white-space: nowrap;
+}
+
+.timeline-item__tasks {
+  list-style: disc;
+  padding-left: 1.2rem;
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.timeline-item__note {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  line-height: 1.7;
+}
+
+
+/* ── Certificate cards ─────────────────────────────────── */
+.certs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin-inline: auto;
+}
+
+.cert-card {
+  display: block;
+  background-color: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: transform var(--transition), box-shadow var(--transition), background-color var(--transition);
+}
+
+.cert-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 28px var(--color-shadow);
+}
+
+.cert-card__img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+}
+
+.cert-card__body {
+  padding: 1rem 1.25rem;
+}
+
+.cert-card__title {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 0.25rem;
+}
+
+.cert-card__year {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+}
+
+.social-link__icon {
+  width: 28px;
+  height: 28px;
+  display: block;
+  transition: opacity 0.2s ease;
+}
+
+.social-link:hover .social-link__icon {
+  opacity: 0.8; 
+}
+
+
+/* ── Responsive ─────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .timeline-item__header {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+}

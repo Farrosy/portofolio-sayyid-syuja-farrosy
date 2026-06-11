@@ -1,0 +1,192 @@
+/* ============================================================
+   pages.css
+   Layer 4: Style spesifik per halaman — hero, contact footer
+============================================================ */
+
+/* ── Hero (index.html) ─────────────────────────────────── */
+.hero {
+  padding-block: 5rem 4rem;
+  background-color: var(--color-bg);
+  transition: background-color var(--transition);
+}
+
+.hero__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.hero__avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--color-bg-card);
+  box-shadow: 0 4px 20px var(--color-shadow);
+  margin-bottom: 1.25rem;
+}
+
+.hero__name {
+  font-size: clamp(1.75rem, 5vw, 2.75rem);
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.hero__title {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--color-accent);
+  margin-bottom: 1rem;
+}
+
+.hero__bio {
+  max-width: 600px;
+  color: var(--color-text-muted);
+  margin-bottom: 1.75rem;
+  line-height: 1.75;
+}
+
+.hero__actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+/* ── Contact & Footer Wrapper (Global) ─────────────────── */
+/* PEMBENAHAN: Wadah utama pembungkus section contact dan sub-footer */
+.site-footer-wrapper {
+  background-color: var(--color-bg-dark);
+  margin-top: auto; /* Memaksa footer tetap di bawah jika konten halaman sedikit */
+  border-top: 1px solid var(--color-border);
+}
+
+.contact {
+  padding-block: 4rem 3rem; /* PEMBENAHAN: Sedikit dikurangi agar tidak terlalu berjarak dari sub-footer */
+  transition: background-color var(--transition);
+}
+
+.contact__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.contact__title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 0.75rem;
+}
+
+.contact__desc {
+  max-width: 500px;
+  color: #94a3b8;
+  margin-bottom: 2rem;
+  line-height: 1.7;
+}
+
+.contact__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem; 
+  justify-content: center;
+  margin-bottom: 2.5rem; /* PEMBENAHAN: Jarak ke ikon sosial media disesuaikan */
+}
+
+.contact__link-icon {
+  display: block;
+  object-fit: contain;
+}
+
+.contact__link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #60a5fa;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: color var(--transition);
+}
+
+.contact__link:hover {
+  color: #93c5fd;
+}
+
+.contact__socials {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.social-link {
+  color: #64748b;
+  transition: color var(--transition), transform var(--transition);
+}
+
+.social-link:hover {
+  color: #ffffff;
+  transform: scale(1.15);
+}
+
+/* BARU: Memindahkan layout credit text/copyright lama (.site-footer) ke sini */
+.site-footer-bottom {
+  background-color: #020617;
+  color: #475569;
+  text-align: center;
+  padding-block: 1.25rem;
+  font-size: 0.85rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+
+/* ── Page hero banner (halaman selain index) ────────────── */
+.page-banner {
+  padding-block: 3rem;
+  text-align: center;
+  background-color: var(--color-bg-alt);
+  border-bottom: 1px solid var(--color-border);
+  transition: background-color var(--transition);
+}
+
+.page-banner__title {
+  font-size: clamp(1.5rem, 4vw, 2.25rem);
+  font-weight: 700;
+}
+
+.page-banner__sub {
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  margin-top: 0.4rem;
+}
+
+
+/* ── Responsive ─────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .hero { padding-block: 3.5rem 3rem; }
+
+  .contact__links {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .site-footer-bottom {
+    padding-bottom: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero__actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  /* Catatan: Pastikan class .btn tersedia secara global di layout.css atau components.css */
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+}

@@ -3,8 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sayyid Syuja Farrosy — Portfolio</title>
-  
+  <title>Pengalaman & Pendidikan — Sayyid Syuja Farrosy</title>
   <link rel="stylesheet" href="assets/css/base.css" />
   <link rel="stylesheet" href="assets/css/layout.css" />
   <link rel="stylesheet" href="assets/css/components.css" />
@@ -19,14 +18,15 @@
 </head>
 <body>
 
+  <!-- HEADER -->
   <header class="site-header">
     <nav class="nav container">
       <a href="index.html" class="nav__brand">Portofolio</a>
       <div class="nav__right">
         <ul class="nav__links">
-          <li><a href="index.html" class="active">Beranda</a></li>
+          <li><a href="index.html">Beranda</a></li>
           <li><a href="projects.html">Proyek</a></li>
-          <li><a href="experience.html">Pengalaman</a></li>
+          <li><a href="experience.html" class="active">Pengalaman</a></li>
           <li><a href="certificates.html">Sertifikasi</a></li>
         </ul>
 
@@ -50,6 +50,7 @@
     </nav>
   </header>
 
+  <!-- SIDEBAR (mobile) -->
   <div class="sidebar-overlay" id="sidebar-overlay"></div>
   <aside class="sidebar" id="sidebar">
     <div class="sidebar__header">
@@ -57,79 +58,88 @@
       <button class="sidebar__close" id="sidebar-close" aria-label="Tutup menu">✕</button>
     </div>
     <nav class="sidebar__nav">
-      <a href="index.html" class="active">Beranda</a>
+      <a href="index.html">Beranda</a>
       <a href="projects.html">Proyek</a>
-      <a href="experience.html">Pengalaman & Pendidikan</a>
+      <a href="experience.html" class="active">Pengalaman & Pendidikan</a>
       <a href="certificates.html">Sertifikasi</a>
     </nav>
   </aside>
 
   <main>
 
-    <section id="hero" class="hero">
-      <div class="container hero__inner">
-        <img
-          src="assets/img/foto-profil.jpeg"
-          alt="Foto Sayyid Syuja Farrosy"
-          class="hero__avatar"
-        />
-        <h1 class="hero__name">Sayyid Syuja Farrosy</h1>
-        <p class="hero__title">Software Engineer</p>
-        <p class="hero__bio">
-          Mahasiswa aktif jurusan Ilmu Komputer di Cakrawala University dengan latar belakang
-          sebagai lulusan Rekayasa Perangkat Lunak. Berbekal pengalaman praktik sebagai IT Support
-          di Radjak Hospital Cileungsi, saya siap berkontribusi dan beradaptasi dalam lingkungan
-          kerja yang dinamis.
-        </p>
-        <div class="hero__actions">
-          <a href="#contact" class="btn btn--primary">Hubungi Saya</a>
-          <a href="assets/pdf/CV_ATS_SAYYID_SYUJA_FARROSY.pdf" target="_blank" class="btn btn--secondary">Lihat CV</a>
+    <!-- PAGE BANNER -->
+    <div class="page-banner">
+      <div class="container">
+        <h1 class="page-banner__title">Pengalaman & Pendidikan</h1>
+        <p class="page-banner__sub">Perjalanan kerja dan latar belakang pendidikan saya</p>
+      </div>
+    </div>
+
+    <!-- EXPERIENCE -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section__title">Pengalaman Kerja</h2>
+        <div class="timeline">
+
+          <article class="timeline-item">
+            <div class="timeline-item__header">
+              <div>
+                <h3 class="timeline-item__role">PKL IT Support</h3>
+                <p class="timeline-item__company">Radjak Hospital Cileungsi</p>
+              </div>
+              <time class="timeline-item__date">Jan 2024 – Mar 2024</time>
+            </div>
+            <ul class="timeline-item__tasks">
+              <li>Mengubah formulir kertas menjadi formulir input dan output digital berbasis website.</li>
+              <li>Membuat pendataan Excel untuk dokumentasi website yang telah dibuat.</li>
+              <li>Melakukan instalasi ulang Windows pada PC kantor.</li>
+            </ul>
+          </article>
+
         </div>
       </div>
     </section>
 
-    <section id="skills" class="section section--alt">
+    <!-- EDUCATION -->
+    <section class="section section--alt">
       <div class="container">
-        <h2 class="section__title">Keterampilan</h2>
-        <div class="skills-grid">
-          <div class="skill-card"><img src="assets/img/icons/html5.svg" alt="" class="skill-card__icon" /><span class="skill-card__label">HTML</span></div>
-          <div class="skill-card"><img src="assets/img/icons/css3.svg" alt="" class="skill-card__icon" /><span class="skill-card__label">CSS</span></div>
-          <div class="skill-card"><img src="assets/img/icons/js.svg" alt="" class="skill-card__icon" /><span class="skill-card__label">JavaScript</span></div>
-          <div class="skill-card"><img src="assets/img/icons/typescript.svg" alt="" class="skill-card__icon" /><span class="skill-card__label">TypeScript</span></div>
-          <div class="skill-card"><img src="assets/img/icons/bootstrap.svg" alt="" class="skill-card__icon" /><span class="skill-card__label">Bootstrap</span></div>
-          <div class="skill-card"><img src="assets/img/icons/tailwind.svg" alt="" class="skill-card__icon" /><span class="skill-card__label">Tailwind CSS</span></div>
-          <div class="skill-card"><img src="assets/img/icons/php.svg" alt="" class="skill-card__icon" /><span class="skill-card__label">PHP</span></div>
-          <div class="skill-card"><img src="assets/img/icons/laravel.svg" alt="" class="skill-card__icon" /><span class="skill-card__label">Laravel</span></div>
-          <div class="skill-card"><img src="assets/img/icons/codeigniter.svg" alt="" class="skill-card__icon" /><span class="skill-card__label">CodeIgniter</span></div>
-          <div class="skill-card"><img src="assets/img/icons/nextjs.svg" alt="" class="skill-card__icon" /><span class="skill-card__label">Next.js</span></div>
-          <div class="skill-card"><img src="assets/img/icons/nodejs.svg" alt="" class="skill-card__icon" /><span class="skill-card__label">Node.js</span></div>
-          <div class="skill-card"><img src="assets/img/icons/supabase.svg" alt="" class="skill-card__icon" /><span class="skill-card__label">Supabase</span></div>
-          <div class="skill-card"><img src="assets/img/icons/react.svg" alt="" class="skill-card__icon" /><span class="skill-card__label">React Native CLI</span></div>
-          <div class="skill-card"><img src="assets/img/icons/android-studio-icon.svg" alt="" class="skill-card__icon" /><span class="skill-card__label">Android Studio</span></div>
-          <div class="skill-card"><img src="assets/img/icons/github.svg" alt="" class="skill-card__icon" /><span class="skill-card__label">GitHub</span></div>
-        </div>
-      </div>
-    </section>
+        <h2 class="section__title">Pendidikan</h2>
+        <div class="timeline">
 
-    <section id="about" class="section">
-      <div class="container">
-        <h2 class="section__title">Tentang Saya</h2>
-        <div class="about-card">
-          <p>
-            Saya Sayyid Syuja Farrosy, seorang lulusan SMK Fatahillah Cileungsi jurusan Rekayasa
-            Perangkat Lunak yang memiliki minat kuat pada bidang Software Engineer dan Frontend
-            Development. Selama pengalaman Praktik Kerja Lapangan (PKL) sebagai IT Support, saya
-            telah mengasah kemampuan komunikasi, ketelitian, dan manajemen waktu yang baik. Saya
-            adalah individu yang siap untuk belajar, berkontribusi secara aktif dalam tim, dan cepat
-            beradaptasi dengan lingkungan serta teknologi baru.
-          </p>
+          <article class="timeline-item">
+            <div class="timeline-item__header">
+              <div>
+                <h3 class="timeline-item__role">Cakrawala University</h3>
+                <p class="timeline-item__company">Ilmu Komputer</p>
+              </div>
+              <time class="timeline-item__date">2025 – Sekarang</time>
+            </div>
+            <p class="timeline-item__note">
+              Fokus pada: Design Thinking, Program Fundamentals (Python), Human-Computer
+              Interaction, dan Discrete Mathematics.
+            </p>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-item__header">
+              <div>
+                <h3 class="timeline-item__role">SMK Fatahillah Cileungsi</h3>
+                <p class="timeline-item__company">Rekayasa Perangkat Lunak</p>
+              </div>
+              <time class="timeline-item__date">2023 – 2025</time>
+            </div>
+            <p class="timeline-item__note">
+              Fokus pada: Website, Basis Data, Aplikasi Mobile, dan IoT.
+            </p>
+          </article>
+
         </div>
       </div>
     </section>
 
   </main>
 
-  <footer id="contact" class="site-footer-wrapper">
+    <footer id="contact" class="site-footer-wrapper">
     <section class="contact">
       <div class="container contact__inner">
         <h2 class="contact__title">Hubungi Saya</h2>
@@ -140,6 +150,7 @@
 
         <div class="contact__links">
           <a href="mailto:sayyidsyujafarrosy23@gmail.com" class="contact__link">
+            <!-- SEBELUMNYA SVG MANUAL, SEKARANG MENGGUNAKAN EMAIL.SVG -->
             <img src="assets/img/icons/email.svg" alt="Email" width="20" height="20" class="contact__link-icon" />
             sayyidsyujafarrosy23@gmail.com
           </a>
