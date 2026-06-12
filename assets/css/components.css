@@ -253,6 +253,101 @@
   opacity: 0.8; 
 }
 
+/* ── Contact Form ──────────────────────────────────────── */
+.contact-form {
+  width: 100%;
+  max-width: 550px;
+  margin: 2rem auto 2.5rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  text-align: left;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.form-label {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background-color: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  color: var(--color-text);
+  font-family: inherit;
+  font-size: 0.925rem;
+  transition: border-color var(--transition), box-shadow var(--transition);
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 3px var(--color-shadow);
+}
+
+.form-textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.btn--submit {
+  align-self: flex-start;
+  padding: 0.75rem 2rem;
+  font-size: 0.95rem;
+  border: none;
+}
+
+/* ── Custom Toast Notification (Kanan Atas, di Bawah Navbar) ── */
+#toast-notification {
+  position: fixed;
+  top: 85px;                
+  right: 24px;
+  background-color: #10b981; 
+  color: #ffffff;
+  padding: 1rem 1.5rem;
+  border-radius: var(--radius-md);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  z-index: 9999;
+  font-size: 0.925rem;
+  font-weight: 500;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
+}
+
+.toast-hidden {
+  transform: translateY(-50px);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.toast-visible {
+  transform: translateY(0);    
+  opacity: 1;
+}
+
+@media (max-width: 576px) {
+  #toast-notification {
+    top: 75px;                 
+    left: 16px;                 
+    right: 16px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .btn--submit {
+    width: 100%;
+    text-align: center;
+  }
+}
 
 /* ── Responsive ─────────────────────────────────────────── */
 @media (max-width: 768px) {
