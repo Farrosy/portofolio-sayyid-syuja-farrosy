@@ -1,24 +1,3 @@
-# Personal Portfolio — Sayyid Syuja Farrosy
-
-[![Role](https://img.shields.io/badge/Role-Software_Engineer-blue?style=flat-flat)](https://www.linkedin.com/in/sayyid-syuja-farrosy/)
-[![Tech](https://img.shields.io/badge/Stack-HTML5_|_CSS3_|_JavaScript-orange?style=flat-flat)]()
-[![License](https://img.shields.io/badge/License-MIT-green.svg)]()
-
-Repositori ini berisi kode sumber untuk website portofolio profesional saya. Website ini dirancang dengan arsitektur CSS berlapis (*layered CSS*) yang bersih, mendukung fitur *Dark/Light Mode* otomatis, responsif di semua ukuran perangkat, serta dilengkapi dengan pengiriman formulir kontak berbasis AJAX dengan *Toast Notification*.
-
----
-
-## 🚀 Fitur Utama
-
-* **Sistem Tema Dinamis (*Dark/Light Mode*):** Sinkronisasi otomatis berdasarkan preferensi sistem operasi pengguna, dilengkapi integrasi `localStorage` dan pelacakan multi-tab secara *real-time*.
-* **Arsitektur CSS Berlapis:** Pemisahan fungsionalitas gaya yang rapi (`base.css`, `layout.css`, `components.css`, `pages.css`) untuk kemudahan pemeliharaan (*maintainability*).
-* **Asynchronous Contact Form:** Pengiriman pesan langsung ke backend Formspree tanpa memicu *reload* halaman.
-* **Custom Toast Alert:** Sistem notifikasi berbasis Vanilla JS yang muncul presisi di bawah bar navigasi dengan animasi transisi *slide-in* yang halus.
-* **Navigasi Seluler Ringan:** *Sidebar mobile* interaktif yang ramah aksesibilitas (*Aria-expanded control* & pintasan tombol `Escape`).
-* **Optimasi Performa & Aksesibilitas:** Memanfaatkan fungsi `prefers-reduced-motion` untuk kenyamanan aksesibilitas visual dan bebas ketergantungan dari *library* pihak ketiga yang berat.
-
----
-
 ## 📁 Struktur Direktori
 
 ```text
