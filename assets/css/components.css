@@ -38,7 +38,7 @@
 /* ── Skill cards ───────────────────────────────────────── */
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 0.75rem;
   max-width: 800px;
   margin-inline: auto;
@@ -259,5 +259,10 @@
   .timeline-item__header {
     flex-direction: column;
     gap: 0.25rem;
+  }
+  
+  .skills-grid {
+    /* Saat di mobile/tablet: otomatis menjadi 3 kolom */
+    grid-template-columns: repeat(3, 1fr);
   }
 }
