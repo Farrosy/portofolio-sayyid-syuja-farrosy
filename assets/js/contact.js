@@ -3,7 +3,7 @@
 ============================================================ */
 
 document.addEventListener('DOMContentLoaded', () => {
-  const contactForm = document.querySelector('.contact-form');
+  const contactForm = document.querySelector('.contact-form-table');
   const toast = document.getElementById('toast-notification');
   const toastMessage = document.getElementById('toast-message');
 
@@ -21,23 +21,22 @@ document.addEventListener('DOMContentLoaded', () => {
       const formData = new FormData(contactForm);
 
       try {
-        // Jalankan pengiriman data ke Formspree / Web3Forms
-        const response = await fetch(contactForm.action || 'https://formspree.io/f/YOUR_ID', {
+        // Kirim data langsung menggunakan URL di atribut action HTML
+        const response = await fetch(contactForm.action, {
           method: 'POST',
           body: formData,
           headers: { 'Accept': 'application/json' }
         });
 
-        if (response.ok) {
-          // Jika sukses
+        const result = await response.json();
+
+        if (response.ok && result.success) {
           showToast('Pesan Anda berhasil dikirim!', '#10b981');
           contactForm.reset(); // Mengosongkan form kembali
         } else {
-          // Jika server merespon tapi ada error
-          showToast('Gagal mengirim pesan. Silakan coba lagi.', '#ef4444');
+          showToast(result.message || 'Gagal mengirim pesan. Silakan coba lagi.', '#ef4444');
         }
       } catch (error) {
-        // Jika ada masalah jaringan / internet
         showToast('Terjadi kesalahan koneksi internet.', '#ef4444');
       } finally {
         // Mengembalikan status tombol utama
