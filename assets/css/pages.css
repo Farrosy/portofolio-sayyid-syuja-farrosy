@@ -176,15 +176,36 @@
   .site-footer-bottom {
     padding-bottom: 1rem;
   }
-}
 
-@media (max-width: 480px) {
-  .hero__actions {
+  .form-table, 
+  .form-table tbody, 
+  .form-table tr, 
+  .form-table td {
+    display: block;
+    width: 100% !important;
+  }
+
+  .table-label-cell {
+    padding-bottom: 0.4rem;
+    padding-right: 0;
+  }
+
+  .form-table tr {
+    margin-bottom: 1rem;
+    display: block;
+  }
+  
+  .btn--submit {
+    width: 100%;
+    text-align: center;
+  }
+
+  /*  */
+    .hero__actions {
     flex-direction: column;
     width: 100%;
   }
 
-  /* Catatan: Pastikan class .btn tersedia secara global di layout.css atau components.css */
   .btn {
     width: 100%;
     text-align: center;

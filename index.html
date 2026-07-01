@@ -76,9 +76,9 @@
         <h1 class="hero__name">Sayyid Syuja Farrosy</h1>
         <p class="hero__title">Software Engineer</p>
         <p class="hero__bio">
-          Mahasiswa aktif jurusan Ilmu Komputer di Cakrawala University dengan latar belakang
-          sebagai lulusan Rekayasa Perangkat Lunak. Berbekal pengalaman praktik sebagai IT Support
-          di Radjak Hospital Cileungsi, saya siap berkontribusi dan beradaptasi dalam lingkungan
+          Mahasiswa aktif jurusan <mark class="mark-advance">Ilmu Komputer</mark> di Cakrawala University dengan latar belakang
+          sebagai lulusan Rekayasa Perangkat Lunak. Berbekal pengalaman praktik sebagai <i class="text-italic-accent">IT Support</i>
+          di <mark class="mark-advance">Radjak Hospital Cileungsi</mark>, saya siap berkontribusi dan beradaptasi dalam lingkungan
           kerja yang dinamis.
         </p>
         <div class="hero__actions">
@@ -116,9 +116,8 @@
         <h2 class="section__title">Tentang Saya</h2>
         <div class="about-card">
           <p>
-            Saya Sayyid Syuja Farrosy, seorang lulusan SMK Fatahillah Cileungsi jurusan Rekayasa
-            Perangkat Lunak yang memiliki minat kuat pada bidang Software Engineer dan Frontend
-            Development. Selama pengalaman Praktik Kerja Lapangan (PKL) sebagai IT Support, saya
+            Saya Sayyid Syuja Farrosy, seorang lulusan <u>SMK Fatahillah Cileungsi</u> jurusan Rekayasa
+            Perangkat Lunak yang memiliki minat kuat pada bidang Software Engineer. Selama pengalaman Praktik Kerja Lapangan (PKL) sebagai <u>IT Support</u>, saya
             telah mengasah kemampuan komunikasi, ketelitian, dan manajemen waktu yang baik. Saya
             adalah individu yang siap untuk belajar, berkontribusi secara aktif dalam tim, dan cepat
             beradaptasi dengan lingkungan serta teknologi baru.
@@ -138,23 +137,42 @@
           Silakan hubungi saya melalui formulir di bawah ini atau email langsung:
         </p>
 
-        <form action="" method="POST" class="contact-form">
-          <div class="form-group">
-            <label for="name" class="form-label">Nama Lengkap</label>
-            <input type="text" id="name" name="name" class="form-input" placeholder="Masukkan nama Anda" required />
-          </div>
-          
-          <div class="form-group">
-            <label for="email" class="form-label">Alamat Email</label>
-            <input type="email" id="email" name="email" class="form-input" placeholder="nama@email.com" required />
-          </div>
-          
-          <div class="form-group">
-            <label for="message" class="form-label">Pesan</label>
-            <textarea id="message" name="message" class="form-input form-textarea" placeholder="Tuliskan pesan Anda di sini..." required></textarea>
-          </div>
-          
-          <button type="submit" class="btn btn--primary btn--submit">Kirim Pesan</button>
+        <form action="" method="POST" class="contact-form-table">
+          <table class="form-table">
+            <tr>
+              <td class="table-label-cell">
+                <label for="name" class="custom-form-label">Nama Lengkap</label>
+              </td>
+              <td class="table-input-cell">
+                <input type="text" id="name" name="name" class="custom-form-input" placeholder="Masukkan nama Anda" required />
+              </td>
+            </tr>
+            
+            <tr>
+              <td class="table-label-cell">
+                <label for="email" class="custom-form-label">Alamat Email</label>
+              </td>
+              <td class="table-input-cell">
+                <input type="email" id="email" name="email" class="custom-form-input" placeholder="nama@email.com" required />
+              </td>
+            </tr>
+            
+            <tr>
+              <td class="table-label-cell" style="vertical-align: top; padding-top: 10px;">
+                <label for="message" class="custom-form-label">Pesan</label>
+              </td>
+              <td class="table-input-cell">
+                <textarea id="message" name="message" class="custom-form-input custom-form-textarea" placeholder="Tuliskan pesan Anda di sini..." required></textarea>
+              </td>
+            </tr>
+            
+            <tr>
+              <td></td>
+              <td class="table-input-cell">
+                <button type="submit" class="btn btn--primary btn--submit">Kirim Pesan</button>
+              </td>
+            </tr>
+          </table>
         </form>
 
         <div class="contact__links">
