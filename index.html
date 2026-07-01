@@ -153,15 +153,23 @@
               </td>
             </tr>
             
-            <!-- PERBAIKAN DI BAGIAN INI -->
-            <tr>
-              <td class="table-label-cell">
-                <label for="phone-number" class="custom-form-label">Nomor Telepon</label>
-              </td>
-              <td class="table-input-cell">
-                <input type="tel" id="phone-number" name="phone" class="custom-form-input" placeholder="081234XXXXXX" required />
-              </td>
-            </tr>
+          <tr>
+            <td class="table-label-cell">
+              <label for="phone-number" class="custom-form-label">Nomor Telepon</label>
+            </td>
+            <td class="table-input-cell">
+              <input 
+                type="tel" 
+                id="phone-number" 
+                name="phone" 
+                class="custom-form-input" 
+                placeholder="081234XXXXXX" 
+                inputmode="numeric" 
+                pattern="[0-9]*" 
+                required 
+              />
+            </td>
+          </tr>
 
             <tr>
               <td class="table-label-cell">

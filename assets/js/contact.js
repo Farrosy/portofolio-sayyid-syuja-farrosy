@@ -1,12 +1,19 @@
 /* ============================================================
    contact.js — Contact form handler & toast notifications
-   Integrated with Local Storage
+   Features: Local Storage, Web3Forms API, Live Phone Filter
 ============================================================ */
 
 document.addEventListener('DOMContentLoaded', () => {
   const contactForm = document.querySelector('.contact-form-table');
+  const phoneNumberInput = document.getElementById('phone-number');
   const toast = document.getElementById('toast-notification');
   const toastMessage = document.getElementById('toast-message');
+
+  if (phoneNumberInput) {
+    phoneNumberInput.addEventListener('input', function() {
+      this.value = this.value.replace(/[^0-9]/g, '');
+    });
+  }
 
   if (contactForm) {
     const dataTersimpan = localStorage.getItem('kontak_user');
@@ -15,13 +22,13 @@ document.addEventListener('DOMContentLoaded', () => {
       const kontak = JSON.parse(dataTersimpan);
 
       if (contactForm.querySelector('#name')) contactForm.querySelector('#name').value = kontak.nama || '';
-      if (contactForm.querySelector('#phone-number')) contactForm.querySelector('#phone-number').value = kontak.telepon || '';
+      if (phoneNumberInput) phoneNumberInput.value = kontak.telepon || '';
       if (contactForm.querySelector('#email')) contactForm.querySelector('#email').value = kontak.email || '';
       if (contactForm.querySelector('#message')) contactForm.querySelector('#message').value = kontak.pesan || '';
     }
 
     contactForm.addEventListener('submit', async (e) => {
-      e.preventDefault();
+      e.preventDefault(); 
       
       const submitBtn = contactForm.querySelector('.btn--submit');
       const originalBtnText = submitBtn.innerText;
@@ -45,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
           const dataKontak = {
             nama: contactForm.querySelector('#name').value.trim(),
-            telepon: contactForm.querySelector('#phone-number').value.trim(),
+            telepon: phoneNumberInput ? phoneNumberInput.value.trim() : '',
             email: contactForm.querySelector('#email').value.trim(),
             pesan: contactForm.querySelector('#message').value.trim(),
             dikirimPada: new Date().toLocaleString('id-ID')
