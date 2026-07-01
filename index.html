@@ -138,8 +138,10 @@
         </p>
 
         <form action="https://api.web3forms.com/submit" method="POST" class="contact-form-table">
-          <!-- Baris di bawah ini adalah kunci rahasia dari Web3Forms Anda -->
+          <!-- Kunci rahasia Web3Forms -->
           <input type="hidden" name="access_key" value="373cb4b4-548c-4e92-8f56-54cb40cea94d">
+          <!-- Mencegah redirect halaman agar Toast JS bekerja sempurna -->
+          <input type="hidden" name="redirect" value="">
           
           <table class="form-table">
             <tr>
@@ -151,6 +153,16 @@
               </td>
             </tr>
             
+            <!-- PERBAIKAN DI BAGIAN INI -->
+            <tr>
+              <td class="table-label-cell">
+                <label for="phone-number" class="custom-form-label">Nomor Telepon</label>
+              </td>
+              <td class="table-input-cell">
+                <input type="tel" id="phone-number" name="phone" class="custom-form-input" placeholder="081234XXXXXX" required />
+              </td>
+            </tr>
+
             <tr>
               <td class="table-label-cell">
                 <label for="email" class="custom-form-label">Alamat Email</label>
