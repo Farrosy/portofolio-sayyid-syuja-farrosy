@@ -1,6 +1,6 @@
 /* ============================================================
    contact.js — Contact form handler & toast notifications
-   Features: Local Storage, Web3Forms API, Live Phone Filter
+   Features: Local Storage (Auto-Save 5s), Web3Forms API, Live Phone Filter
 ============================================================ */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -9,13 +9,38 @@ document.addEventListener('DOMContentLoaded', () => {
   const toast = document.getElementById('toast-notification');
   const toastMessage = document.getElementById('toast-message');
 
+  // ── 1. REAL-TIME PHONE NUMBER FILTER ──
   if (phoneNumberInput) {
     phoneNumberInput.addEventListener('input', function() {
       this.value = this.value.replace(/[^0-9]/g, '');
     });
   }
 
+  // ── 2. DRAFT AUTO-SAVE TO LOCAL STORAGE ──
+  function simpanDraf(statusKirim = 'Belum dikirim') {
+    if (!contactForm) return;
+
+    const nameInput = contactForm.querySelector('#name');
+    const emailInput = contactForm.querySelector('#email');
+    const messageInput = contactForm.querySelector('#message');
+
+    const dataKontak = {
+      nama: nameInput ? nameInput.value.trim() : '',
+      telepon: phoneNumberInput ? phoneNumberInput.value.trim() : '',
+      email: emailInput ? emailInput.value.trim() : '',
+      pesan: messageInput ? messageInput.value.trim() : '',
+      status: statusKirim,
+      diperbaruiPada: new Date().toLocaleString('id-ID')
+    };
+
+    if (dataKontak.nama || dataKontak.telepon || dataKontak.email || dataKontak.pesan) {
+      localStorage.setItem('kontak_user', JSON.stringify(dataKontak));
+      console.log('Draf otomatis disimpan:', dataKontak.diperbaruiPada);
+    }
+  }
+
   if (contactForm) {
+    // ── 3. LOAD DATA FROM LOCAL STORAGE ──
     const dataTersimpan = localStorage.getItem('kontak_user');
     
     if (dataTersimpan) {
@@ -27,6 +52,12 @@ document.addEventListener('DOMContentLoaded', () => {
       if (contactForm.querySelector('#message')) contactForm.querySelector('#message').value = kontak.pesan || '';
     }
 
+    // ── 4. AUTO-SAVE INTERVAL (EVERY 5 SECONDS) ──
+    setInterval(() => {
+      simpanDraf('Belum dikirim (Auto-Save)');
+    }, 5000);
+
+    // ── 5. FORM SUBMIT HANDLER (WEB3FORMS API) ──
     contactForm.addEventListener('submit', async (e) => {
       e.preventDefault(); 
       
@@ -49,17 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (response.ok && result.success) {
           showToast('Pesan Anda berhasil dikirim!', '#10b981');
-
-          const dataKontak = {
-            nama: contactForm.querySelector('#name').value.trim(),
-            telepon: phoneNumberInput ? phoneNumberInput.value.trim() : '',
-            email: contactForm.querySelector('#email').value.trim(),
-            pesan: contactForm.querySelector('#message').value.trim(),
-            dikirimPada: new Date().toLocaleString('id-ID')
-          };
-
-          localStorage.setItem('kontak_user', JSON.stringify(dataKontak));
-          
+          simpanDraf('Sukses Terkirim');
         } else {
           showToast(result.message || 'Gagal mengirim pesan. Silakan coba lagi.', '#ef4444');
         }
@@ -72,6 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // ── 6. TOAST NOTIFICATIONS UI ──
   function showToast(message, bgColor) {
     if (!toast || !toastMessage) return;
 
