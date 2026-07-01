@@ -1,5 +1,6 @@
 /* ============================================================
    contact.js — Contact form handler & toast notifications
+   Integrated with Local Storage
 ============================================================ */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -8,20 +9,29 @@ document.addEventListener('DOMContentLoaded', () => {
   const toastMessage = document.getElementById('toast-message');
 
   if (contactForm) {
+    const dataTersimpan = localStorage.getItem('kontak_user');
+    
+    if (dataTersimpan) {
+      const kontak = JSON.parse(dataTersimpan);
+
+      if (contactForm.querySelector('#name')) contactForm.querySelector('#name').value = kontak.nama || '';
+      if (contactForm.querySelector('#phone-number')) contactForm.querySelector('#phone-number').value = kontak.telepon || '';
+      if (contactForm.querySelector('#email')) contactForm.querySelector('#email').value = kontak.email || '';
+      if (contactForm.querySelector('#message')) contactForm.querySelector('#message').value = kontak.pesan || '';
+    }
+
     contactForm.addEventListener('submit', async (e) => {
-      e.preventDefault(); // Mencegah halaman reload
+      e.preventDefault();
       
       const submitBtn = contactForm.querySelector('.btn--submit');
       const originalBtnText = submitBtn.innerText;
       
-      // Mengubah teks tombol saat loading
       submitBtn.innerText = 'Mengirim...';
       submitBtn.disabled = true;
 
       const formData = new FormData(contactForm);
 
       try {
-        // Kirim data langsung menggunakan URL di atribut action HTML
         const response = await fetch(contactForm.action, {
           method: 'POST',
           body: formData,
@@ -32,21 +42,29 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (response.ok && result.success) {
           showToast('Pesan Anda berhasil dikirim!', '#10b981');
-          contactForm.reset(); // Mengosongkan form kembali
+
+          const dataKontak = {
+            nama: contactForm.querySelector('#name').value.trim(),
+            telepon: contactForm.querySelector('#phone-number').value.trim(),
+            email: contactForm.querySelector('#email').value.trim(),
+            pesan: contactForm.querySelector('#message').value.trim(),
+            dikirimPada: new Date().toLocaleString('id-ID')
+          };
+
+          localStorage.setItem('kontak_user', JSON.stringify(dataKontak));
+          
         } else {
           showToast(result.message || 'Gagal mengirim pesan. Silakan coba lagi.', '#ef4444');
         }
       } catch (error) {
         showToast('Terjadi kesalahan koneksi internet.', '#ef4444');
       } finally {
-        // Mengembalikan status tombol utama
         submitBtn.innerText = originalBtnText;
         submitBtn.disabled = false;
       }
     });
   }
 
-  // Fungsi internal untuk memunculkan dan menyembunyikan toast
   function showToast(message, bgColor) {
     if (!toast || !toastMessage) return;
 
@@ -56,7 +74,6 @@ document.addEventListener('DOMContentLoaded', () => {
     toast.classList.remove('toast-hidden');
     toast.classList.add('toast-visible');
 
-    // Toast otomatis hilang setelah 4 detik
     setTimeout(() => {
       toast.classList.remove('toast-visible');
       toast.classList.add('toast-hidden');
